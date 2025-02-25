@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
+
+    <title>Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.png">
+    <!-- CSS ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/animation.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/prism.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <main class="page-wrapper">
+
+        <!-- <div id="my_switcher" class="my_switcher">
+            <ul>
+                <li>
+                    <a href="javascript: void(0);" data-theme="light" class="setColor light">
+                        <img src="assets/images/light/switch/sun-01.svg" alt="Sun images"><span title="Light Mode">
+                            Light</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
+                        <img src="assets/images/light/switch/vector.svg" alt="Vector Images"><span title="Dark Mode">
+                            Dark</span>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+
+        <nav class="aktion-navbar">
+            <div class="container aktion-navbar-container">
+                <a href="/" class="aktion-logo">
+                    <img src="assets/images/logo/logo-dark.png" alt="Aktion AI Logo">
+                </a>
+
+                <button class="aktion-mobile-toggle-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <ul class="aktion-nav-links">
+                    <li class="aktion-nav-item">
+                        <a href="/" class="aktion-nav-link active">Home</a>
+                    </li>
+                    <li class="aktion-nav-item">
+                        <a href="/product.html" class="aktion-nav-link">Products</a>
+                    </li>
+                    <li class="aktion-nav-item">
+                        <a href="/integrations.html" class="aktion-nav-link">Integrations</a>
+                    </li>
+                    <li class="aktion-nav-item">
+                        <a href="/company.html" class="aktion-nav-link">Company</a>
+                    </li>
+                    <!-- <li class="aktion-nav-item">
+                        <a href="/learn.html" class="aktion-nav-link">Learn</a>
+                    </li> -->
+                    <li class="aktion-nav-item">
+                        <a href="/pricing.html" class="aktion-nav-link">Pricing</a>
+                    </li>
+                </ul>
+
+                <a href="#" class=" d-sm-none d-md-block aktion-demo-btn">
+                    Schedule a demo
+                    <span class="aktion-phone-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
+                <button class="aktion-mobile-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Sidebar -->
+        <div class="aktion-sidebar">
+            <div class="aktion-sidebar-header">
+                <a href="/" class="aktion-logo">
+                    <img src="assets/images/logo/logo-dark.png" alt="Aktion AI Logo">
+                </a>
+                <button class="aktion-sidebar-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="aktion-nav-links">
+                <li class="aktion-nav-item">
+                    <a href="/" class="aktion-nav-link active">Home</a>
+                </li>
+                <li class="aktion-nav-item">
+                    <a href="/product.html" class="aktion-nav-link">Products</a>
+                </li>
+                <li class="aktion-nav-item">
+                    <a href="/integrations.html" class="aktion-nav-link">Integrations</a>
+                </li>
+                <li class="aktion-nav-item">
+                    <a href="/company.html" class="aktion-nav-link">Company</a>
+                </li>
+                <li class="aktion-nav-item">
+                    <a href="/learn.html" class="aktion-nav-link">Learn</a>
+                </li>
+                <li class="aktion-nav-item">
+                    <a href="/pricing.html" class="aktion-nav-link">Pricing</a>
+                </li>
+            </ul>
+            <a href="#" class="aktion-demo-btn">
+                Schedule a demo
+                <span class="aktion-phone-icon">
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+        <div class="aktion-overlay">
+        </div>
+
+        <!-- Imroz Preloader -->
+        <div class="preloader">
+            <div class='loader'>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+                <div class='circle'></div>
+            </div>
+        </div>
+
+        <!-- HERO -->
+        <section class="transcript-hero">
+            <div class="transcript-hero__content">
+                <div class="transcript-hero__label">#1 AI VIDEO TRANSCRIPTION PLATFORM</div>
+                <h1 class="transcript-hero__title">Stop taking notes. Start taking action.</h1>
+                <ul class="transcript-features">
+                    <li class="transcript-features__item">Multilingual Language Recognition & Translation</li>
+                    <li class="transcript-features__item">Offline & Online Meeting Support</li>
+                    <li class="transcript-features__item">MOM Generation</li>
+                    <li class="transcript-features__item">Seamless Task Assignment</li>
+                    <li class="transcript-features__item">Sector Specific Vocabulary</li>
+                </ul>
+                <div class="transcript-cta">
+                    <a href="#" class="transcript-cta__primary">Schedule demo</a>
+                    <a href="#" class="transcript-cta__secondary">
+                        Sign up with
+                        <img src="https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                            alt="Microsoft" style="width: 20px; height: 20px;">
+                        <img src="https://cdn.brandfetch.io/id6O2oGzv-/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                            alt="Google" style="width: 20px; height: 20px;">
+                    </a>
+                </div>
+                <div class="transcript-hero__note">No credit card required</div>
+            </div>
+            <div class="transcript-hero__image-wrapper">
+                <img src="assets/images/screenshots/task-create.png" alt="Product Demo" class="transcript-hero__image">
+            </div>
+        </section>
+
+        <!-- Primary -->
+        <section class="aktion-inefficient-section">
+            <div class="question-marks" id="questionMarks"></div>
+
+            <div class="container">
+                <h2 class="aktion-inefficient-title mb-5">Work smarter, grow faster</h2>
+                <!-- <p class="aktion-inefficient-subtitle">— said no business ever.</p> -->
+
+                <div class="aktion-message-card">
+                    <h3 class="aktion-card-title">Here’s the reality:</h3>
+                    <p class="aktion-card-point">Meetings are full of insights, but notes get lost.
+                    </p>
+                    <p class="aktion-card-point">Manually sorting tasks is time-consuming and inefficient.</p>
+                    <p class="aktion-card-point">Assigning tasks after meetings leads to delays and miscommunication.
+                    </p>
+                </div>
+
+                <div class="aktion-solution-card">
+                    <h3 class="aktion-card-title">AktionAI changes that:</h3>
+                    <p class="aktion-card-point">AktionAI transcribes and extracts key action items instantly.</p>
+                    <p class="aktion-card-point">AI-powered task categorization keeps everything organized.</p>
+                    <p class="aktion-card-point">AI automatically assigns the right tasks to the right people.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service video tab -->
+        <div class="rainbow-service-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Why Choose Us</span>
+                            </h4>
+                            <h2 class="title mb--0">Why Choose AktionAI</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row--30 align-items-center">
+                    <div class="col-lg-12">
+                        <div class="rainbow-default-tab style-three generator-tab-defalt">
+                            <ul class="nav nav-tabs tab-button" role="tablist">
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle active"
+                                        id="video-generator-tab" data-bs-toggle="tab" data-bs-target="#video-generate"
+                                        type="button" role="tab" aria-controls="video-generate"
+                                        aria-selected="true"><span class="generator-icon"><img
+                                                src="assets/images/icons/video-g.png" alt="Vedio Generator Icon">Meeting
+                                            Transcript</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab" role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle "
+                                        id="audio-generator-tab" data-bs-toggle="tab" data-bs-target="#audio-generate"
+                                        type="button" role="tab" aria-controls="audio-generate"
+                                        aria-selected="false"><span class="generator-icon"><img
+                                                src="assets/images/icons/audio-g.png" alt="Vedio Generator Icon">Task
+                                            Categorize</span><span class="border-bottom-style"></span></button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link rainbow-gradient-btn without-shape-circle"
+                                        id="photo-generator-tab" data-bs-toggle="tab" data-bs-target="#photo-generate"
+                                        type="button" role="tab" aria-controls="photo-generate"
+                                        aria-selected="false"><span class="generator-icon"><img
+                                                src="assets/images/icons/photo-g.png" alt="Vedio Generator Icon">AI
+                                            Assigner</span><span class="border-bottom-style"></span></button>
+                                </li>
+
+                            </ul>
+
+                            <div class="rainbow-tab-content tab-content">
+                                <div class="tab-pane fade show active" id="video-generate" role="tabpanel"
+                                    aria-labelledby="video-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-12 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img ">
+                                                            <video src="assets/videos/transcript-generate.mp4" autoplay
+                                                                muted playsinline disableRemotePlayback preload="auto"
+                                                                loop width="100%" height="100%"></video>
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade show " id="audio-generate" role="tabpanel"
+                                    aria-labelledby="video-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-12 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img ">
+                                                            <video src="assets/videos/task-generator.mp4" autoplay muted
+                                                                playsinline disableRemotePlayback preload="auto" loop
+                                                                width="100%" height="100%"></video>
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade show " id="photo-generate" role="tabpanel"
+                                    aria-labelledby="video-generator-tab">
+                                    <div class="inner">
+                                        <div class="row">
+                                            <div class="col-xl-12 mt_md--30 mt_sm--30">
+                                                <div class="export-img">
+                                                    <div class="inner-without-padding">
+                                                        <div class="export-img ">
+                                                            <video src="assets/videos/task-assigner.mp4" autoplay muted
+                                                                playsinline disableRemotePlayback preload="auto" loop
+                                                                width="100%" height="100%"></video>
+                                                            <div class="image-shape"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Usecase section -->
+        <div class="aiwave-service-area rainbow-section-gap">
+            <div class="container">
+                <div class="row row--15 service-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700"
+                                data-sal-delay="100">
+                                <h4 class="subtitle">
+                                    <span class="theme-gradient">Use Cases</span>
+                                </h4>
+                                <h2 class="title mb--0">Who is AktionAI for?</h2>
+                                <p class="mt-2">No matter your industry, if you have meetings, AktionAI makes them
+                                    actionable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up"
+                        data-sal-duration="700">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="assets/images/service/service-icon-01.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">Project Managers</h4>
+                                <p class="description b1 mb--0">AI assigns tasks with precision.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up"
+                        data-sal-duration="700" data-sal-delay="100">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="assets/images/service/service-icon-02.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">Operations Teams</h4>
+                                <p class="description b1 mb--0">Automate and streamline workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 sal-animate" data-sal="slide-up"
+                        data-sal-duration="700" data-sal-delay="200">
+                        <div class="service service__style--1 aiwave-style text-center">
+                            <div class="icon">
+                                <img src="assets/images/service/service-icon-03.png" alt="Servece Image">
+                            </div>
+                            <div class="content">
+                                <h4 class="title w-600">Sales Teams</h4>
+                                <p class="description b1 mb--0">Never miss a follow-up again.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="aktion-why-choose">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Feature Details</span>
+                            </h4>
+                            <h2 class="title mb--0">How AktionAI Works</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <ul class="aktion-tabs-list">
+                            <li>
+                                <button class="aktion-tab-trigger aktion-tab-active" data-aktion-tab="1">
+                                    <span class="aktion-tab-number">01</span>
+                                    <span class="aktion-tab-text">Multilingual Input - Both Offline & Online</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="2">
+                                    <span class="aktion-tab-number">02</span>
+                                    <span class="aktion-tab-text">Effortless Integration with Task Management
+                                        Tools</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="3">
+                                    <span class="aktion-tab-number">03</span>
+                                    <span class="aktion-tab-text">Multi-Language AI Model Management</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="4">
+                                    <span class="aktion-tab-number">04</span>
+                                    <span class="aktion-tab-text">Transparent Audit Trail & Accountability</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="5">
+                                    <span class="aktion-tab-number">05</span>
+                                    <span class="aktion-tab-text">Customizable User & Company Preferences</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="6">
+                                    <span class="aktion-tab-number">06</span>
+                                    <span class="aktion-tab-text">AI-Powered Usage Analytics & Reporting</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="7">
+                                    <span class="aktion-tab-number">07</span>
+                                    <span class="aktion-tab-text">Enterprise-Grade Security & Compliance</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="aktion-tab-trigger" data-aktion-tab="8">
+                                    <span class="aktion-tab-number">08</span>
+                                    <span class="aktion-tab-text">Smart Task Management Features</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="aktion-tab-content">
+                            <div class="aktion-tab-panel aktion-panel-active" id="aktionTab1">
+                                <img src="assets/images/switcher-feature/multilingual.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Multilingual Input - Both Offline & Online</h3>
+                                <p class="aktion-feature-description">No more language barriers. Just seamless
+                                    collaboration. AktionAI understands over 15+ languages, ensuring global teams stay
+                                    aligned—no
+                                    matter where they are.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab2">
+                                <img src="assets/images/switcher-feature/task-manage.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Effortless Integration with Task Management Tools</h3>
+                                <p class="aktion-feature-description">Connect your favorite tools. AktionAI seamlessly
+                                    integrates with Optimore, Jira, Asana, Trello, Monday.com and more—so
+                                    you never have to switch platforms.</p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab3">
+                                <img src="assets/images/switcher-feature/multi-language.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Multi-Language AI Model Management</h3>
+                                <p class="aktion-feature-description">Optimized AI for every business need.
+                                    AktionAI adapts to your industry, workflows, and preferred AI models for top-tier
+                                    task generation.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab4">
+                                <img src="assets/images/switcher-feature/audit.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Transparent Audit Trail & Accountability</h3>
+                                <p class="aktion-feature-description">Every action tracked. Every task accounted for.
+                                    Maintain clarity and compliance with a detailed, real-time audit log for all
+                                    generated tasks.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab5">
+                                <img src="assets/images/switcher-feature/customizable.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Customizable User & Company Preferences</h3>
+                                <p class="aktion-feature-description">Your workflow, your rules.
+                                    AktionAI adapts to your company’s structure, permissions, and task generation
+                                    settings—because one size doesn’t fit all.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab6">
+                                <img src="assets/images/switcher-feature/analytics.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">AI-Powered Usage Analytics & Reporting</h3>
+                                <p class="aktion-feature-description">Insights that drive efficiency.
+                                    Monitor, measure, and optimize your AI-powered task automation with real-time data.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab7">
+                                <img src="assets/images/switcher-feature/security.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Enterprise-Grade Security & Compliance</h3>
+                                <p class="aktion-feature-description">Your data. Fully protected.
+                                    With GDPR, HIPAA, and enterprise-grade encryption, AktionAI keeps your sensitive
+                                    information safe.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+                            <div class="aktion-tab-panel " id="aktionTab8">
+                                <img src="assets/images/switcher-feature/task-manage.png" alt="Multilingual Support"
+                                    class="aktion-feature-image1">
+                                <h3 class="aktion-feature-title2">Smart Task Management Features</h3>
+                                <p class="aktion-feature-description">Total control over every AI-generated task.
+                                </p>
+                                <a href="#" class="aktion-demo-cta">Schedule a demo</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aktion-feature-section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700"
+                        data-sal-delay="100">
+                        <h4 class="subtitle">
+                            <span class="theme-gradient">Comparison Table</span>
+                        </h4>
+                        <h2 class="title mb--0">Traditional Approach vs. AktionAI</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aktion-comparison-wrapper">
+                <!-- Challenge Column -->
+                <div class="aktion-column aktion-challenge-column">
+                    <div class="aktion-column-header">
+                        <h3 class="aktion-header-title">Challenge</h3>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Task Creation</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Assignments</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Global Teams</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Documentation</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Transparency</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-challenge-text">Prioritization</span>
+                    </div>
+                </div>
+
+                <!-- Traditional Column -->
+                <div class="aktion-column aktion-traditional-column">
+                    <div class="aktion-column-header">
+                        <h3 class="aktion-header-title">Traditional Approach</h3>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">Messy notes lost action items.</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">Confusion & misalignment.</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">Language barriers.</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">Disconnected tools.</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">No task tracking.</span>
+                    </div>
+                    <div class="aktion-row-item">
+                        <span class="aktion-traditional-text">Tasks get lost.</span>
+                    </div>
+                </div>
+
+                <!-- AI Column -->
+                <div class="aktion-column aktion-ai-column">
+                    <div class="aktion-column-header">
+                        <img src="assets/images/logo/logo.png" alt="Aktion AI" class="aktion-logo">
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Auto-captures everything.
+                        </div>
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            AI picks the best assignee.
+
+                        </div>
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Multi-language input support.
+                        </div>
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Direct Optinire, Jira, Asana & Trello sync.
+                        </div>
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Full audit trail.
+                        </div>
+                    </div>
+                    <div class="aktion-row-item">
+                        <div class="aktion-ai-feature">
+                            <span class="aktion-check-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            AI sorts tasks by urgency.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="rainbow-brand-area rainbow-section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title rating-title text-center sal-animate" data-sal="slide-up"
+                            data-sal-duration="700" data-sal-delay="100">
+                            <div class="rating">
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                                <a href="#rating">
+                                    <i class="fa-sharp fa-solid fa-star"></i>
+                                </a>
+                            </div>
+                            <p class="subtitle mb--0">Based on 20,000+ reviews on</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt--10">
+                        <ul class="brand-list brand-style-2">
+                            <li><a href="#"><img src="assets/images/brand/brand-01.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="assets/images/brand/brand-02.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="assets/images/brand/brand-03.png" alt="Brand Image"></a></li>
+                            <li><a href="#"><img src="assets/images/brand/brand-04.png" alt="Brand Image"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-shape-left">
+                <img src="assets/images/bg/bg-shape-two.png" alt="Bg shape">
+            </div>
+        </div>
+
+        <section class="aktion-features-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center pb--60" data-sal="slide-up" data-sal-duration="700"
+                            data-sal-delay="100">
+                            <h4 class="subtitle">
+                                <span class="theme-gradient">Feature Details</span>
+                            </h4>
+                            <h2 class="title mb--0">Why Teams Rely on AktionAI</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="aktion-features-list">
+                    <!-- Features will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="aktion-cta-wrapper">
+            <div class="container">
+                <div class="aktion-preview-card">
+                    <h2 class="aktion-preview-title">Tired of Doing Accountability more than the work itself?</h2>
+                    <p class="aktion-preview-description">Try Aktion Ai for improved work management and workflow</p>
+                    <div class="aktion-preview-image-container">
+                        <img src="assets/images/screenshots/task-create.png" alt="Meeting Demo"
+                            class="aktion-preview-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="aktion-cta-card">
+                <div class="aktion-cta-content">
+                    <h2 class="aktion-cta-title">Sign up for Aktion Ai today!</h2>
+                    <p class="aktion-cta-description">Go from discussion to execution — instantly.</p>
+                    <a href="#" class="aktion-cta-button">
+                        Schedule a demo
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path d="M8 5.5V8.5L10 9.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    <p class="aktion-small-text">No credit card is required. No setup is needed. Just instant
+                        productivity.</p>
+                </div>
+                <img src="assets/images/checklist-cta.png" alt="Checklist Icon" class="aktion-cta-image">
+            </div>
+        </section>
+        <div style="height: 50px;"></div>
+
+        <footer class="rainbow-footer footer-style-default footer-style-3 position-relative">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="rainbow-footer-widget">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img class="logo-light" src="assets/images/logo/logo.png" alt="ChatBot Logo">
+                                        <img class="logo-dark" src="assets/images/logo/logo.png" alt="ChatBot Logo">
+                                    </a>
+                                </div>
+                                <p class="b1 desc-text">The world’s top teams use AktionAI to drive efficiency.</p>
+                                <h6 class="subtitle">Join a Newsletter</h6>
+                                <form class="newsletter-form" action="#">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Enter Your Email Here">
+                                        <button class="btn-default bg-solid-primary" type="submit"><i
+                                                class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                            <div class="rainbow-footer-widget">
+                                <div class="widget-menu-bottom">
+                                    <h4 class="title">Quick Links</h4>
+                                    <div class="inner">
+                                        <ul class="footer-link link-hover">
+                                            <li><a href="#">Home</a></li>
+                                            <li><a href="blog.html">Product</a></li>
+                                            <li><a href="contact,html">Integrations</a></li>
+                                            <li><a href="utilize.html">Contact us</a></li>
+                                            <li><a href="roadmap.html">Pricing</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
+                            <div class="rainbow-footer-widget">
+                                <div class="widget-menu-top">
+                                    <h4 class="title">Features</h4>
+                                    <div class="inner">
+                                        <ul class="footer-link link-hover">
+                                            <li><a href="product.html">Meeting Transcipt</a></li>
+                                            <li><a href="product.html">Task Categorization</a></li>
+                                            <li><a href="product.html">AI Assigner </a></li>
+                                            <!-- <li><a href="code-generator.html">Code Generator</a></li> -->
+                                            <!-- <li><a href="#">Education Feedback</a></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="rainbow-footer-widget">
+                                <div class="widget-menu-top">
+                                    <h4 class="title">Contact</h4>
+                                    <div class="inner">
+                                        <ul class="footer-link contact-link">
+                                            <li><i class="contact-icon fa-regular fa-location-dot"></i><a
+                                                    href="#">Ecospace Business Park, Newtown, Kolkata , India.</a></li>
+                                            <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
+                                                    href="mailto:info@bluecoppertech.com">info@bluecoppertech.com</a>
+                                            </li>
+                                            <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
+                                                    href="mailto:sales@bluecoppertech.com">sales@bluecoppertech.com</a>
+                                            </li>
+                                            <li><i class="contact-icon fa-regular fa-phone"></i><a
+                                                    href="tel:+919903004242">+91-9903004242</a>
+                                            </li>
+                                            <li><i class="contact-icon fa-regular fa-phone"></i><a
+                                                    href="tel:+919903004344">+91-9903004344</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright-area copyright-style-one">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="copyright-left">
+                            <ul class="ft-menu link-hover d-flex flex-wrap">
+                                <li class="me-3">
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="copyright-center text-center">
+                            <p class="copyright-text mb-0">Copyright © 2025 <a href="/"
+                                    class="btn-read-more"><span>Aktion Ai</span></a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-lg-end text-md-end text-center">
+                        <img src="https://bluecoppertech.com/images/logo-small-reverse.png" alt="bluecoppertech"
+                            class="bluecopper-copyright-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rbt-progress-parent">
+            <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+
+    </main>
+    <!-- All Scripts  -->
+    <div class="rbt-progress-parent">
+        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <script src="assets/js/vendor/modernizr.min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/waypoint.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/prism.js"></script>
+    <script src="assets/js/vendor/bootstrap-select.min.js"></script>
+    <script src="assets/js/vendor/backto-top.js"></script>
+    <!-- Light Mode Switcher -->
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

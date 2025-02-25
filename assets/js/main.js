@@ -1567,3 +1567,11 @@ document.addEventListener("DOMContentLoaded", function () {
   aktionAI_adjustResponsiveLayout();
   window.addEventListener("resize", aktionAI_adjustResponsiveLayout);
 });
+
+document.querySelector("head").insertAdjacentHTML(
+  "beforeend",
+  `
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+`
+);

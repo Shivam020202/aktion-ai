@@ -1568,10 +1568,26 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", aktionAI_adjustResponsiveLayout);
 });
 
-document.querySelector("head").insertAdjacentHTML(
-  "beforeend",
-  `
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#ffffff">
-`
-);
+// Create and add meta tags to force light mode
+const metaColorScheme = document.createElement("meta");
+metaColorScheme.setAttribute("name", "color-scheme");
+metaColorScheme.setAttribute("content", "light");
+document.head.appendChild(metaColorScheme);
+
+// Create and inject CSS to override dark mode
+const styleElement = document.createElement("style");
+styleElement.textContent = `
+  @media (prefers-color-scheme: dark) {
+    html, body {
+      background-color: white !important;
+      color: black !important;
+      color-scheme: light !important;
+    }
+  }
+`;
+document.head.appendChild(styleElement);
+
+// Set attributes and classes to enforce light mode
+document.documentElement.style.colorScheme = "light";
+document.body.classList.remove("dark-mode", "dark-theme");
+document.body.classList.add("light-mode", "light-theme");

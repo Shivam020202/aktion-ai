@@ -28,7 +28,7 @@
 }
 
 .aktion-logo img {
-  height: 50px;
+  height: 75px;
   width: auto;
 }
 
@@ -220,11 +220,6 @@
 
 /* Tablet Breakpoint */
 @media (max-width: 991px) {
-  .aktion-navbar {
-    margin: 10px;
-    border-radius: 25px;
-  }
-
   .aktion-mobile-toggle {
     display: block;
   }
@@ -273,11 +268,6 @@
 
 /* Mobile Breakpoint */
 @media (max-width: 480px) {
-  .aktion-navbar {
-    margin: 5px;
-    padding: 8px 0;
-  }
-
   .aktion-navbar-container {
     padding: 0 15px;
   }
@@ -287,7 +277,7 @@
   }
 
   .aktion-logo img {
-    height: 32px;
+    height: 50px;
   }
 
   .aktion-sidebar {

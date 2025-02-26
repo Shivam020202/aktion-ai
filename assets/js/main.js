@@ -1315,21 +1315,49 @@ document.addEventListener("DOMContentLoaded", function () {
       .map((feature, index) => createFeatureHTML(feature, index === 0))
       .join("");
 
+    // Add minimal CSS for arrow rotation only
+    const style = document.createElement("style");
+    style.textContent = `
+      .aktion-feature-toggle svg {
+        transition: transform 0.3s ease;
+      }
+      
+      .aktion-feature-item.active .aktion-feature-toggle svg {
+        transform: rotate(360deg);
+      }
+    `;
+    document.head.appendChild(style);
+
     // Add click handlers
     const featureItems = document.querySelectorAll(".aktion-feature-item");
     featureItems.forEach((item) => {
-      item.addEventListener("click", function () {
-        // If this item is already active, do nothing
-        if (this.classList.contains("active")) return;
+      const header = item.querySelector(".aktion-feature-header");
 
-        // Remove active class from all items
-        featureItems.forEach((otherItem) => {
-          otherItem.classList.remove("active");
-        });
+      header.addEventListener("click", function (e) {
+        // Determine if this item is already active
+        const isActive = item.classList.contains("active");
 
-        // Add active class to clicked item
-        this.classList.add("active");
+        // If this item is active, just toggle it off
+        if (isActive) {
+          item.classList.remove("active");
+        } else {
+          // Otherwise, close all others and open this one
+          featureItems.forEach((otherItem) => {
+            otherItem.classList.remove("active");
+          });
+
+          // Add active class to this item
+          item.classList.add("active");
+        }
       });
+
+      // Prevent clicks inside content from triggering collapse
+      const content = item.querySelector(".aktion-feature-content");
+      if (content) {
+        content.addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+      }
     });
   }
 });

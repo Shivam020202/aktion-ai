@@ -1093,16 +1093,16 @@ const aktionFeatures = [
     description:
       "No more language barriers. Just seamless collaboration. AktionAI understands over 15+ languages, ensuring global teams stay aligned—no matter where they are.",
     points: [
-      "AI-Generated Tasks in Any Language – Extract and organize tasks while maintaining accuracy and context.",
-      "Language-Aware AI Models – Process complex grammar and nuances effortlessly.",
+      "AI-Generated Tasks in Any Language – Extract and organize tasks while maintaining accuracy and context",
+      "Language-Aware AI Models – Process complex grammar and nuances effortlessly",
       "Localized Task Outputs – Deliver action items in your sector specific terms",
-      "Built-In Translation Support – Automatically convert tasks for smooth cross-language collaboration.",
+      "Built-In Translation Support – Automatically convert tasks for smooth cross-language collaboration",
     ],
     link: {
       text: "Work Across Borders Effortlessly",
       url: "#",
     },
-    image: "assets/images/features/multilingual.webp",
+    image: "assets/images/features/Multi-Lingua-.webp",
   },
   {
     id: 2,
@@ -1116,10 +1116,10 @@ const aktionFeatures = [
     description:
       "Connect your favorite tools. AktionAI seamlessly integrates with Optimore, Jira, Asana, Trello, Monday.com and more—so you never have to switch platforms.",
     points: [
-      "One-Click Connectivity – Sync tasks with your existing workflows instantly.",
-      "Enterprise API Support – Get custom API access for proprietary systems.",
-      "Real-Time Task Sync – Keep projects updated across multiple platforms.",
-      "Automated Task Assignments – AI-driven delegation within your tools.",
+      "One-Click Connectivity – Sync tasks with your existing workflows instantly",
+      "Enterprise API Support – Get custom API access for proprietary systems",
+      "Real-Time Task Sync – Keep projects updated across multiple platforms",
+      "Automated Task Assignments – AI-driven delegation within your tools",
     ],
     link: {
       text: "Integrate in Seconds",
@@ -1139,9 +1139,9 @@ const aktionFeatures = [
     description:
       "Optimized AI for every business need. AktionAI adapts to your industry, workflows, and preferred AI models for top-tier task generation.",
     points: [
-      "Multiple AI Language Models – Choose the best model for your needs.",
-      "Performance Monitoring – Track accuracy, efficiency, and cost per model.",
-      "Admin Customization – Prioritize AI settings based on your organization's structure.",
+      "Multiple AI Language Models – Choose the best model for your needs",
+      "Performance Monitoring – Track accuracy, efficiency, and cost per model",
+      "Admin Customization – Prioritize AI settings based on your organization's structure",
     ],
     link: {
       text: "Optimize Your AI Workflow",
@@ -1161,9 +1161,9 @@ const aktionFeatures = [
     description:
       "Every action tracked. Every task accounted for. Maintain clarity and compliance with a detailed, real-time audit log for all generated tasks.",
     points: [
-      "Full Task Logs – Monitor every task creation, modification, and update.",
-      "User Action Tracking – Keep accountability intact with detailed edit history.",
-      "Source Data Linking – Trace every action item back to its original transcript.",
+      "Full Task Logs – Monitor every task creation, modification, and update",
+      "User Action Tracking – Keep accountability intact with detailed edit history",
+      "Source Data Linking – Trace every action item back to its original transcript",
     ],
     link: {
       text: "Ensure Compliance & Transparency",
@@ -1181,10 +1181,10 @@ const aktionFeatures = [
     },
     title: "Customizable User & Company Preferences",
     description:
-      "Your workflow, your rules. AktionAI adapts to your company's structure, permissions, and task generation settings—because one size doesn't fit all.",
+      "Your workflow, your rules. AktionAI adapts to your company's structure, permissions, and task generation settings—because one size doesn't fit all",
     points: [
-      "Flexible Workflows – Adjust task creation & integration to match your process.",
-      "Role-Based Access – Manage permissions for teams, admins, and users.",
+      "Flexible Workflows – Adjust task creation & integration to match your process",
+      "Role-Based Access – Manage permissions for teams, admins, and users",
     ],
     link: {
       text: "Customize Your AI Settings",
@@ -1202,10 +1202,10 @@ const aktionFeatures = [
     },
     title: "AI-Powered Usage Analytics & Reporting",
     description:
-      "Insights that drive efficiency. Monitor, measure, and optimize your AI-powered task automation with real-time data.",
+      "Insights that drive efficiency. Monitor, measure, and optimize your AI-powered task automation with real-time data",
     points: [
-      "Live Dashboard – View task creation rates, AI performance, and usage insights.",
-      "Custom Reports – Generate tailored analytics for business strategy.",
+      "Live Dashboard – View task creation rates, AI performance, and usage insights",
+      "Custom Reports – Generate tailored analytics for business strategy",
     ],
     link: {
       text: "Unlock Data-Driven Productivity",
@@ -1225,9 +1225,9 @@ const aktionFeatures = [
     description:
       "Your data. Fully protected. With GDPR, HIPAA, and enterprise-grade encryption, AktionAI keeps your sensitive information safe.",
     points: [
-      "Industry Compliance – Built to meet global security standards.",
-      "End-to-End Encryption – Secure task storage and controlled access.",
-      "SSO & MFA Support – Strengthen protection with single sign-on and multi-factor authentication.",
+      "Industry Compliance – Built to meet global security standards",
+      "End-to-End Encryption – Secure task storage and controlled access",
+      "SSO & MFA Support – Strengthen protection with single sign-on and multi-factor authentication",
     ],
     link: {
       text: "Secure Your Workflows",
@@ -1244,15 +1244,15 @@ const aktionFeatures = [
  </svg>`,
     },
     title: "Smart Task Management Features",
-    description: "Total control over every AI-generated task.",
+    description: "Total control over every AI-generated task",
     points: [
-      "Editable Tasks – Modify descriptions, names, and assignments anytime.",
-      "AI Task Regeneration – Adjust tasks dynamically based on feedback.",
-      "Task Dependencies – Link related tasks for better workflow planning.",
+      "Editable Tasks – Modify descriptions, names, and assignments anytime",
+      "AI Task Regeneration – Adjust tasks dynamically based on feedback",
+      "Task Dependencies – Link related tasks for better workflow planning",
     ],
     link: {
       text: "Take Control of AI Tasks",
-      url: "#",
+      url: "contact.html",
     },
     image: "assets/images/features/task-management.webp",
   },

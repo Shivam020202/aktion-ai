@@ -1,9 +1,9 @@
 /* Main Navbar Styles */
 .aktion-navbar {
-  /* position: fixed; */
+  position: fixed;
   /* margin: 10px; */
   width: 100%;
-  padding: 12px 0;
+  padding: 5px 0;
   background-color: #ffffff;
   /* border-radius: 50px; */
   border: 1px solid #ededed;
@@ -28,7 +28,7 @@
 }
 
 .aktion-logo img {
-  height: 75px;
+  height: 50px;
   width: auto;
 }
 
@@ -50,7 +50,7 @@
 .aktion-nav-link {
   color: #1a1a1a;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   padding: 8px 0;
   position: relative;
@@ -442,7 +442,7 @@
 .transcript-hero__image-wrapper {
   flex: 1;
   background: var(--dark-gradient-2);
-  padding: 0.75rem;
+  padding: 0.25rem;
   border-radius: var(--radius-big);
   display: flex;
   align-items: center;
@@ -496,7 +496,7 @@
 
   .transcript-hero__image-wrapper {
     width: 100%;
-    padding: 2rem;
+    padding: 0.25rem;
   }
 
   .transcript-hero__title {
@@ -517,11 +517,9 @@
 }
 
 @media (max-width: 480px) {
-
   .aktion-features-section {
     padding: 20px 0 !important ;
-    
-}
+  }
   .transcript-hero {
     padding: 3rem 1rem;
     /* padding-top: 130px; */
@@ -676,7 +674,6 @@
   .aktion-section-title {
     font-size: 36px;
   }
- 
 
   .aktion-tab-trigger {
     padding: 15px;
@@ -1130,8 +1127,7 @@
 }
 
 @media (max-width: 480px) {
-
-  .section-title{
+  .section-title {
     padding-bottom: 30px !important;
   }
 
@@ -1774,8 +1770,8 @@
   }
 }
 
-@media (min-width:1000px) {
-  .transcript-hero{
+@media (min-width: 1000px) {
+  .transcript-hero {
     min-height: 45vh !important;
   }
 }

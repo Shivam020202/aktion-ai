@@ -1,6 +1,6 @@
 /* Main Navbar Styles */
 .aktion-navbar {
-  position: fixed;
+  /* position: fixed; */
   /* margin: 10px; */
   width: 100%;
   padding: 12px 0;
@@ -9,7 +9,7 @@
   border: 1px solid #ededed;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  /* position: relative; */
+  position: relative;
 }
 
 .aktion-navbar-container {
@@ -322,7 +322,7 @@
 }
 /* Hero section container */
 .transcript-hero {
-  min-height: 85vh;
+  min-height: 70vh;
   max-width: 1400px;
   margin: 0 auto;
   padding: 6rem 3rem;
@@ -442,7 +442,7 @@
 .transcript-hero__image-wrapper {
   flex: 1;
   background: var(--dark-gradient-2);
-  padding: 1.5rem;
+  padding: 0.75rem;
   border-radius: var(--radius-big);
   display: flex;
   align-items: center;
@@ -517,9 +517,14 @@
 }
 
 @media (max-width: 480px) {
+
+  .aktion-features-section {
+    padding: 20px 0 !important ;
+    
+}
   .transcript-hero {
     padding: 3rem 1rem;
-    padding-top: 130px;
+    /* padding-top: 130px; */
   }
 
   .transcript-hero__title {
@@ -540,7 +545,7 @@
 
 /* Why choose section */
 .aktion-why-choose {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   background-color: var(--color-white);
   color: var(--color-white);
 }
@@ -671,6 +676,7 @@
   .aktion-section-title {
     font-size: 36px;
   }
+ 
 
   .aktion-tab-trigger {
     padding: 15px;
@@ -683,7 +689,7 @@
 
 /* Features section */
 .aktion-feature-section {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .aktion-feature-subtitle {
@@ -1124,6 +1130,11 @@
 }
 
 @media (max-width: 480px) {
+
+  .section-title{
+    padding-bottom: 30px !important;
+  }
+
   .action-image {
     display: hidden;
   }
@@ -1763,6 +1774,12 @@
   }
 }
 
+@media (min-width:1000px) {
+  .transcript-hero{
+    min-height: 45vh !important;
+  }
+}
+
 @media (max-width: 768px) {
   .aktion-transform-section {
     padding: 50px 0;
@@ -2145,7 +2162,7 @@
 
 .title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 16px;
   color: #333;
 }

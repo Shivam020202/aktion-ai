@@ -1619,3 +1619,29 @@ document.addEventListener("DOMContentLoaded", function () {
 // document.documentElement.style.colorScheme = "light";
 // document.body.classList.remove("dark-mode", "dark-theme");
 // document.body.classList.add("light-mode", "light-theme");
+
+// Video switcher tabs
+document.addEventListener("DOMContentLoaded", function () {
+  let tabs = document.querySelectorAll(".tab-button .nav-link");
+  let currentIndex = 0;
+
+  function switchTab() {
+    // Remove active class from current tab
+    tabs[currentIndex].classList.remove("active");
+    let currentPane = document.querySelector(
+      tabs[currentIndex].dataset.bsTarget
+    );
+    currentPane.classList.remove("show", "active");
+
+    // Move to the next tab
+    currentIndex = (currentIndex + 1) % tabs.length;
+
+    // Add active class to the new tab
+    tabs[currentIndex].classList.add("active");
+    let newPane = document.querySelector(tabs[currentIndex].dataset.bsTarget);
+    newPane.classList.add("show", "active");
+  }
+
+  // Set interval to switch tabs every 10 seconds
+  setInterval(switchTab, 10000);
+});

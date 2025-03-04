@@ -619,7 +619,7 @@
 .aktion-feature-image1 {
   width: 100%;
   max-width: 600px;
-  aspect-ratio: 4/3;
+  /* aspect-ratio: 4/3; */
   object-fit: cover;
   border-radius: var(--radius);
   margin-bottom: 30px;

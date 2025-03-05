@@ -2634,6 +2634,10 @@
     height: 35px;
   }
 }
+.title{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 <<<<<<< Updated upstream
 /* Partnership page */
@@ -3111,6 +3115,8 @@
     font-size: 1.15rem;
   }
 }
+
+
 =======
 
 >>>>>>> Stashed changes

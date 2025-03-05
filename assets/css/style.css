@@ -19300,7 +19300,7 @@ iframe {
 }
 .footer-style-3 .footer-top {
   background: var(--color-blackest);
-  padding: 80px 0;
+  padding: 50px 0 30px 0;
 }
 @media only screen and (max-width: 767px) {
   .footer-style-3 .footer-top {
@@ -24932,5 +24932,9 @@ iframe {
 }
 .active-dark-mode .sign-up-box .signup-box-bottom .signup-box-footer a {
   color: var(--color-primary);
+}
+
+.contact-div{
+  display: flex!important;
 }
 /*# sourceMappingURL=../maps/style.css.map */

@@ -176,7 +176,19 @@
                 <div class="transcript-hero__note">No credit card required</div>
             </div>
             <div class="transcript-hero__image-wrapper">
-                <img src="assets/images/creatives/hero-image-new.png" alt="Product Demo" class="transcript-hero__image">
+                <!-- <img src="assets/images/creatives/hero-image-new.png" alt="Product Demo" > -->
+                <div class="custom-video-container"
+                    style="position: relative; display: inline-block; margin-top: 5px; margin-left: 5px; margin-right: 5px;">
+                    <video id="uniqueVideoPlayer" class="custom-video-player" autoplay muted loop playsinline
+                        disableRemotePlayback preload="auto" style="width: 100%; height: auto;">
+                        <source src="assets/videos/hero-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="uniqueSoundToggle" class="custom-sound-toggle"
+                        style="position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 5px;">
+                        <span id="uniqueSoundIcon" class="custom-sound-icon">🔊</span>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -367,7 +379,7 @@
                     <div class="col-lg-7">
                         <div class="aktion-tab-content">
                             <div class="aktion-tab-panel aktion-panel-active" id="aktionTab1">
-                                <img src="assets/images/switcher-feature/multilingual.png" alt="Multilingual Support"
+                                <img src="assets/images/screenshots/ai-5.png" alt="Multilingual Support"
                                     class="aktion-feature-image1">
                                 <h3 class="aktion-feature-title2">Multilingual Support</h3>
                                 <p class="aktion-feature-description">No more language barriers. Just seamless
@@ -436,7 +448,7 @@
                                 <a href="#" class="aktion-demo-cta">Schedule a demo</a>
                             </div>
                             <div class="aktion-tab-panel " id="aktionTab8">
-                                <img src="assets/images/switcher-feature/task-manage.png" alt="Multilingual Support"
+                                <img src="assets/images/screenshots/ai-6.png" alt="Multilingual Support"
                                     class="aktion-feature-image1">
                                 <h3 class="aktion-feature-title2">Effortless Integration with Task Management
                                     Tools</h3>

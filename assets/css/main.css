@@ -3125,3 +3125,9 @@
   margin-bottom: 10px;
   color: #8b4040 !important;
 }
+
+.custom-video-player {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}

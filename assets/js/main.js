@@ -1647,4 +1647,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var video = document.querySelector(".tab-video");
-video.playbackRate = 0.4; // Set the playback speed to 0.5x
+video.playbackRate = 0.2; // Set the playback speed to 0.5x
+
+function initializeCustomVideoControls() {
+  const uniqueVideo = document.getElementById("uniqueVideoPlayer");
+  const uniqueSoundToggle = document.getElementById("uniqueSoundToggle");
+  const uniqueSoundIcon = document.getElementById("uniqueSoundIcon");
+
+  uniqueSoundToggle.addEventListener("click", function () {
+    if (uniqueVideo.muted) {
+      uniqueVideo.muted = false;
+      uniqueSoundIcon.textContent = "🔊";
+    } else {
+      uniqueVideo.muted = true;
+      uniqueSoundIcon.textContent = "🔇";
+    }
+  });
+}
+
+// Call the initialization function when the DOM is ready
+document.addEventListener("DOMContentLoaded", initializeCustomVideoControls);

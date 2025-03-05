@@ -12,7 +12,7 @@
   /* position: relative; */
 }
 .nav-height {
-  height: 30px;
+  height: 25px;
 }
 
 .aktion-navbar-container {
@@ -2650,7 +2650,7 @@
 
 /* Hero Section */
 .aktion-hero-container {
-  min-height: 40vh;
+  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2766,7 +2766,7 @@
 
 /* Hero Section */
 .aktion-hero-container {
-  min-height: 40vh;
+  min-height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;

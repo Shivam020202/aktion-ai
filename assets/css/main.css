@@ -2634,3 +2634,479 @@
     height: 35px;
   }
 }
+
+/* Partnership page */
+/* Base Styles */
+.aktion-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.aktion-hero-container {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fde8e9; /* Light red background */
+  padding: 3rem 1rem;
+}
+
+.aktion-content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.aktion-feature-tag {
+  background-color: rgba(230, 57, 70, 0.1);
+  color: #e63946;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(230, 57, 70, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.aktion-main-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1d3557; /* Dark text for better visibility */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.aktion-highlight-text {
+  color: #e63946;
+  position: relative;
+}
+
+.aktion-highlight-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #e63946;
+  bottom: -4px;
+  left: 0;
+  border-radius: 3px;
+}
+
+.aktion-hero-text {
+  font-size: 1.25rem;
+  color: #2c3e50; /* Dark text for better visibility */
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.aktion-cta-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aktion-button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.aktion-primary-btn {
+  background-color: #e63946;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.2);
+}
+
+.aktion-primary-btn:hover {
+  background-color: #d02533;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.3);
+}
+
+.aktion-secondary-btn {
+  background-color: #ffffff;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+.aktion-secondary-btn:hover {
+  background-color: rgba(29, 53, 87, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Partnership Section */
+/* Base Styles */
+.aktion-wrapper * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.aktion-hero-container {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fde8e9; /* Light red background */
+  padding: 3rem 1rem;
+}
+
+.aktion-content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.aktion-feature-tag {
+  background-color: rgba(230, 57, 70, 0.1);
+  color: #e63946;
+  padding: 0.6rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  border: 1px solid rgba(230, 57, 70, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.aktion-main-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1d3557; /* Dark text for better visibility */
+  margin-bottom: 1.8rem;
+  line-height: 1.2;
+}
+
+.aktion-highlight-text {
+  color: #e63946;
+  position: relative;
+}
+
+.aktion-highlight-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #e63946;
+  bottom: -6px;
+  left: 0;
+  border-radius: 3px;
+}
+
+.aktion-hero-text {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Dark text for better visibility */
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.aktion-cta-container {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aktion-button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.aktion-primary-btn {
+  background-color: #e63946;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(230, 57, 70, 0.2);
+}
+
+.aktion-primary-btn:hover {
+  background-color: #d02533;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 57, 70, 0.3);
+}
+
+.aktion-secondary-btn {
+  background-color: #ffffff;
+  color: #1d3557;
+  border: 2px solid #1d3557;
+}
+
+.aktion-secondary-btn:hover {
+  background-color: rgba(29, 53, 87, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Partnership Section */
+.aktion-partnership-section {
+  padding: 6rem 1.5rem;
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aktion-partnership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aktion-section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aktion-subtitle {
+  color: #e63946;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.aktion-section-title {
+  font-size: 3rem;
+  color: #1d3557;
+  font-weight: 800;
+  margin-bottom: 1.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.aktion-section-title::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background-color: #e63946;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.aktion-section-description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #2c3e50;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.aktion-models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.aktion-model-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.aktion-model-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.aktion-model-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #e63946;
+  z-index: 2;
+}
+
+.aktion-model-content {
+  padding: 2.5rem;
+}
+
+.aktion-model-number {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e63946;
+  margin-bottom: 1.2rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgba(230, 57, 70, 0.1);
+  border-radius: 4px;
+}
+
+.aktion-model-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 1.2rem;
+}
+
+.aktion-model-description {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.aktion-model-link {
+  display: inline-flex;
+  align-items: center;
+  color: #e63946;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.aktion-model-link:hover {
+  color: #d02533;
+}
+
+.aktion-arrow-icon {
+  margin-left: 6px;
+  transition: transform 0.3s ease;
+}
+
+.aktion-model-link:hover .aktion-arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .aktion-main-heading {
+    font-size: 3rem;
+  }
+
+  .aktion-hero-text {
+    font-size: 1.4rem;
+  }
+
+  .aktion-section-title {
+    font-size: 2.6rem;
+  }
+
+  .aktion-model-title {
+    font-size: 2rem;
+  }
+
+  .aktion-model-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aktion-main-heading {
+    font-size: 2.6rem;
+  }
+
+  .aktion-hero-text {
+    font-size: 1.3rem;
+  }
+
+  .aktion-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .aktion-partnership-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .aktion-section-title {
+    font-size: 2.4rem;
+  }
+
+  .aktion-section-description {
+    font-size: 1.3rem;
+  }
+
+  .aktion-models-grid {
+    gap: 1.5rem;
+  }
+
+  .aktion-model-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aktion-main-heading {
+    font-size: 2.2rem;
+  }
+
+  .aktion-hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .aktion-feature-tag {
+    font-size: 1rem;
+    padding: 0.5rem 1.3rem;
+  }
+
+  .aktion-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+
+  .aktion-hero-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .aktion-partnership-section {
+    padding: 3rem 1rem;
+  }
+
+  .aktion-section-title {
+    font-size: 2.2rem;
+  }
+
+  .aktion-section-header {
+    margin-bottom: 3rem;
+  }
+
+  .aktion-model-content {
+    padding: 2rem;
+  }
+
+  .aktion-model-description {
+    font-size: 1.15rem;
+  }
+}

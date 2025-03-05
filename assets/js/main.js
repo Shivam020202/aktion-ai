@@ -1295,9 +1295,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         `
                           )
                           .join("")}
-                        <a href="${
-                          feature.link.url
-                        }" class="aktion-feature-link">${feature.link.text} →</a>
+                        
                     </div>
                     <img src="${
                       feature.image

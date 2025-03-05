@@ -1645,3 +1645,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set interval to switch tabs every 10 seconds
   setInterval(switchTab, 10000);
 });
+
+var video = document.querySelector(".tab-video");
+video.playbackRate = 0.4; // Set the playback speed to 0.5x

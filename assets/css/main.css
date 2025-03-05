@@ -2761,7 +2761,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 /* Hero Section */
@@ -2800,7 +2800,7 @@
 
 .aktion-main-heading {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 500;
   color: #1d3557; /* Dark text for better visibility */
   margin-bottom: 1.8rem;
   line-height: 1.2;
@@ -2875,7 +2875,7 @@
 .aktion-partnership-section {
   padding: 6rem 1.5rem;
   background-color: #f8f9fa;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .aktion-partnership-container {
@@ -2901,13 +2901,13 @@
 .aktion-section-title {
   font-size: 3rem;
   color: #1d3557;
-  font-weight: 800;
+  font-weight: 500;
   margin-bottom: 1.8rem;
   position: relative;
   display: inline-block;
 }
 
-.aktion-section-title::after {
+/* .aktion-section-title::after {
   content: "";
   position: absolute;
   width: 80px;
@@ -2917,7 +2917,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 2px;
-}
+} */
 
 .aktion-section-description {
   max-width: 700px;
@@ -3113,4 +3113,15 @@
   .aktion-model-description {
     font-size: 1.15rem;
   }
+}
+
+.list-feature {
+  list-style: disc;
+  text-align: left;
+  color: #8b4040 !important;
+}
+
+.list-feature li {
+  margin-bottom: 10px;
+  color: #8b4040 !important;
 }

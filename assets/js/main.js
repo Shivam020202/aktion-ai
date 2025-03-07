@@ -1665,3 +1665,26 @@ function initializeCustomVideoControls() {
 
 // Call the initialization function when the DOM is ready
 document.addEventListener("DOMContentLoaded", initializeCustomVideoControls);
+
+window.onload = function () {
+  // Clear dark mode setting from localStorage and cookies
+  localStorage.removeItem("darkMode"); // Remove dark mode from localStorage
+  Cookies.remove("darkMode"); // Remove dark mode cookie (if it's set by js-cookie)
+
+  // Apply light mode CSS (Replace with the actual path of your light theme CSS file)
+  var lightModeCss = "path/to/your/light-theme.css"; // Update this with the correct path to your light theme CSS file
+  var themeLink = document.querySelector('link[rel="stylesheet"]'); // Find the existing theme link element
+  if (themeLink) {
+    themeLink.href = lightModeCss; // Change the href to the light mode CSS file
+  }
+
+  // Remove dark mode class from body (if any)
+  document.body.classList.remove("dark-mode"); // Remove dark mode class from body (update with your class if different)
+
+  // If there is a theme switcher, set it to light mode
+  var switcher = document.querySelector(".theme-switcher"); // Update with the actual switcher class if different
+  if (switcher) {
+    switcher.classList.remove("dark"); // Remove dark mode class on the switcher
+    switcher.classList.add("light"); // Optionally, force light mode on the switcher
+  }
+};

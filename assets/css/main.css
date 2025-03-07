@@ -31,7 +31,7 @@
 }
 
 .aktion-logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
   margin-bottom: 5px;
 }
@@ -94,8 +94,8 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: linear-gradient(to top, #990000, #c41e3a);
-  color: #ffffff;
+  border: 2px solid #990000 !important;
+  color: #990000;
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 100px;
@@ -115,7 +115,7 @@
 .aktion-demo-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(153, 0, 0, 0.25);
-  color: #ffffff;
+  /* color: black; */
   text-decoration: none;
 }
 
@@ -446,9 +446,10 @@
 .transcript-hero__image-wrapper {
   flex: 1;
   background: var(--dark-gradient-2);
-  padding: 0.25rem;
-  border-radius: var(--radius-big);
+  padding: 1px;
+  border-radius: 20px;
   display: flex;
+  padding-bottom: 0px !important;
   align-items: center;
   justify-content: center;
   box-shadow: var(--dark-shadow-1);
@@ -500,7 +501,7 @@
 
   .transcript-hero__image-wrapper {
     width: 100%;
-    padding: 0.25rem;
+    padding: 1px;
   }
 
   .transcript-hero__title {
@@ -623,7 +624,7 @@
   object-fit: cover;
   border-radius: var(--radius);
   margin-bottom: 30px;
-  box-shadow: var(--shadow-primary);
+  box-shadow: #d5d5d5 0px 0px 10px;
 }
 
 .aktion-feature-title {
@@ -642,7 +643,7 @@
 
 .aktion-feature-description {
   color: var(--color-body);
-  margin-bottom: 30px !important;
+  margin-bottom: 0px !important;
   line-height: var(--line-height-b1);
 }
 
@@ -745,7 +746,7 @@
 }
 
 .aktion-ai-column {
-  background: #990000;
+  background: #770000;
 }
 
 .aktion-ai-column .aktion-column-header {
@@ -2559,7 +2560,7 @@
 
 /* Video  */
 .tab-video {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .padding-bg {
@@ -3130,4 +3131,93 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+
+/* New tab design */
+/* General Tab Styles */
+.custom-tab-item {
+  margin-right: 20px !important;
+}
+
+/* Customize Tab Button */
+.custom-tab-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #333 !important; /* Text color */
+  padding: 12px 25px !important; /* Adjusted padding for better spacing */
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  border-radius: 15px !important; /* Rounded corners */
+  transition: all 0.3s ease !important;
+  position: relative !important;
+}
+
+.custom-tab-btn .generator-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.custom-tab-btn .generator-icon img {
+  width: 22px !important; /* Slightly larger icon */
+  margin-right: 10px !important; /* Adjusted margin */
+}
+
+/* Hover Effects */
+.custom-tab-btn:hover {
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  color: #e60000 !important;
+}
+
+/* Active Tab Styles */
+.custom-tab-btn.active {
+  background-color: #e60000 !important; /* Red background for active tab */
+  color: white !important;
+  border-radius: 15px !important; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+}
+
+.custom-tab-btn.active .generator-icon img {
+  filter: brightness(0) invert(1) !important; /* Invert icon color when active */
+}
+
+/* Border Style (Only visible on hover, hidden on active) */
+.custom-tab-btn .custom-border-bottom {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #e60000 !important;
+  transform: scaleX(0) !important;
+  transform-origin: bottom right !important;
+  transition: transform 0.3s ease !important;
+}
+
+/* Hover: Show border underline */
+.custom-tab-btn:hover .custom-border-bottom {
+  transform: scaleX(1) !important;
+  transform-origin: bottom left !important;
+}
+
+/* Active Tab: Hide border underline */
+.custom-tab-btn.active .custom-border-bottom {
+  transform: scaleX(0) !important;
+}
+
+/* Centering the Tabs */
+.center-tabs {
+  display: flex !important;
+  justify-content: center !important; /* Center horizontally */
+  align-items: center !important; /* Center vertically */
+  flex-wrap: wrap !important; /* Allow wrapping if there are many tabs */
+  gap: 20px !important; /* Space between the tabs */
+  padding: 0 !important; /* Remove default padding */
+  /* margin: 0 !important; */
+  margin-bottom: 40px !important;
+}
+
+/* Optional: Ensure the li's don't take more space than needed */
+.custom-tab-item {
+  margin: 0 !important;
 }

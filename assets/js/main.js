@@ -1666,25 +1666,81 @@ function initializeCustomVideoControls() {
 // Call the initialization function when the DOM is ready
 document.addEventListener("DOMContentLoaded", initializeCustomVideoControls);
 
-window.onload = function () {
-  // Clear dark mode setting from localStorage and cookies
-  localStorage.removeItem("darkMode"); // Remove dark mode from localStorage
-  Cookies.remove("darkMode"); // Remove dark mode cookie (if it's set by js-cookie)
+// Enhanced hover effects and animations
+document.addEventListener("DOMContentLoaded", function () {
+  const planColumns = document.querySelectorAll(".prc_plan_column");
 
-  // Apply light mode CSS (Replace with the actual path of your light theme CSS file)
-  var lightModeCss = "path/to/your/light-theme.css"; // Update this with the correct path to your light theme CSS file
-  var themeLink = document.querySelector('link[rel="stylesheet"]'); // Find the existing theme link element
-  if (themeLink) {
-    themeLink.href = lightModeCss; // Change the href to the light mode CSS file
+  // Only apply hover effects on non-touch devices
+  if (window.matchMedia("(hover: hover)").matches) {
+    planColumns.forEach((column) => {
+      column.addEventListener("mouseenter", function () {
+        const columnIndex = Array.from(this.parentNode.children).indexOf(this);
+
+        // Highlight the entire column
+        document.querySelectorAll(".prc_comparison_table tr").forEach((row) => {
+          if (row.children[columnIndex]) {
+            row.children[columnIndex].classList.add("prc_column_highlight");
+          }
+        });
+      });
+
+      column.addEventListener("mouseleave", function () {
+        const columnIndex = Array.from(this.parentNode.children).indexOf(this);
+
+        // Remove highlighting
+        document.querySelectorAll(".prc_comparison_table tr").forEach((row) => {
+          if (row.children[columnIndex]) {
+            row.children[columnIndex].classList.remove("prc_column_highlight");
+          }
+        });
+      });
+    });
   }
 
-  // Remove dark mode class from body (if any)
-  document.body.classList.remove("dark-mode"); // Remove dark mode class from body (update with your class if different)
+  // Add staggered animation to table rows for a more dynamic appearance
+  const tableRows = document.querySelectorAll(".prc_table_body tr");
+  tableRows.forEach((row, index) => {
+    row.style.opacity = "0";
+    row.style.transform = "translateY(20px)";
+    row.style.transition = `opacity 0.5s ease, transform 0.5s ease`;
+    row.style.transitionDelay = `${0.1 + index * 0.05}s`;
 
-  // If there is a theme switcher, set it to light mode
-  var switcher = document.querySelector(".theme-switcher"); // Update with the actual switcher class if different
-  if (switcher) {
-    switcher.classList.remove("dark"); // Remove dark mode class on the switcher
-    switcher.classList.add("light"); // Optionally, force light mode on the switcher
+    setTimeout(() => {
+      row.style.opacity = "1";
+      row.style.transform = "translateY(0)";
+    }, 100);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Unique function name to avoid conflicts
+  function bxlFeatureTabsInit() {
+    const tabButtons = document.querySelectorAll(".bxl-tab-button");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Remove active class from all tabs
+        tabButtons.forEach((btn) => {
+          btn.classList.remove("bxl-tab-active");
+        });
+
+        // Add active class to current tab
+        this.classList.add("bxl-tab-active");
+
+        // Hide all panels
+        const contentPanels = document.querySelectorAll(".bxl-content-panel");
+        contentPanels.forEach((panel) => {
+          panel.classList.remove("bxl-panel-active");
+        });
+
+        // Show the selected panel
+        const tabIndex = this.getAttribute("data-bxl-tab");
+        const activePanel = document.getElementById("bxlTab" + tabIndex);
+        activePanel.classList.add("bxl-panel-active");
+      });
+    });
   }
-};
+
+  // Initialize tabs
+  bxlFeatureTabsInit();
+});

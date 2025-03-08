@@ -446,13 +446,13 @@
 .transcript-hero__image-wrapper {
   flex: 1;
   /* background: var(--dark-gradient-2); */
-  padding: 0px;
+  padding: -1px;
   border-radius: 20px;
   display: flex;
   padding-bottom: 0px !important;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--dark-shadow-1);
+  /* box-shadow: var(--dark-shadow-1); */
 }
 
 .transcript-hero__image {
@@ -3154,6 +3154,8 @@
 }
 
 .custom-tab-btn .generator-icon {
+  margin-left: 14px !important;
+  margin-right: 14px !important;
   display: inline-flex !important;
   align-items: center !important;
 }

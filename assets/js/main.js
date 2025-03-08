@@ -1091,7 +1091,7 @@ const aktionFeatures = [
     },
     title: "Multi-Lingual Input - Both Offline & Online",
     description:
-      "No more language barriers. Just seamless collaboration. AktionAI understands over 15+ languages, ensuring global teams stay aligned—no matter where they are.",
+      "No more language barriers. Just seamless collaboration. AktionAI understands over 15+ languages, ensuring global teams stay aligned—no matter where they are",
     points: [
       "AI-Generated Tasks in Any Language – Extract and organize tasks while maintaining accuracy and context",
       "Language-Aware AI Models – Process complex grammar and nuances effortlessly",
@@ -1114,7 +1114,7 @@ const aktionFeatures = [
     },
     title: "Effortless Integration with Task Management Tools",
     description:
-      "Connect your favorite tools. AktionAI seamlessly integrates with Optimore, Jira, Asana, Trello, Monday.com and more—so you never have to switch platforms.",
+      "Connect your favorite tools. AktionAI seamlessly integrates with Optimore, Jira, Asana, Trello, Monday.com and more—so you never have to switch platforms",
     points: [
       "One-Click Connectivity – Sync tasks with your existing workflows instantly",
       "Enterprise API Support – Get custom API access for proprietary systems",
@@ -1137,7 +1137,7 @@ const aktionFeatures = [
     },
     title: "Multi-Language AI Model Management",
     description:
-      "Optimized AI for every business need. AktionAI adapts to your industry, workflows, and preferred AI models for top-tier task generation.",
+      "Optimized AI for every business need. AktionAI adapts to your industry, workflows, and preferred AI models for top-tier task generation",
     points: [
       "Multiple AI Language Models – Choose the best model for your needs",
       "Performance Monitoring – Track accuracy, efficiency, and cost per model",
@@ -1159,7 +1159,7 @@ const aktionFeatures = [
     },
     title: "Transparent Audit Trail & Accountability",
     description:
-      "Every action tracked. Every task accounted for. Maintain clarity and compliance with a detailed, real-time audit log for all generated tasks.",
+      "Every action tracked. Every task accounted for. Maintain clarity and compliance with a detailed, real-time audit log for all generated tasks",
     points: [
       "Full Task Logs – Monitor every task creation, modification, and update",
       "User Action Tracking – Keep accountability intact with detailed edit history",
@@ -1223,7 +1223,7 @@ const aktionFeatures = [
     },
     title: "Enterprise-Grade Security & Compliance",
     description:
-      "Your data. Fully protected. With GDPR, HIPAA, and enterprise-grade encryption, AktionAI keeps your sensitive information safe.",
+      "Your data. Fully protected. With GDPR, HIPAA, and enterprise-grade encryption, AktionAI keeps your sensitive information safe",
     points: [
       "Industry Compliance – Built to meet global security standards",
       "End-to-End Encryption – Secure task storage and controlled access",

@@ -3441,16 +3441,6 @@
   position: relative;
 }
 
-.prc_section_header::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #e63946, #ff6b6b);
-  margin: 1.5rem auto 0;
-  border-radius: 2px;
-}
-
 .prc_section_title {
   font-size: 3rem;
   font-weight: 800;
@@ -3606,6 +3596,7 @@
   transform: translateX(30%) translateY(-30%) rotate(45deg);
   transform-origin: center;
   width: 150px;
+  padding-left: 25px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 10;

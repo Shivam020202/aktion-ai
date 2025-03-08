@@ -212,10 +212,10 @@
   .footer-top {
     margin-top: 50px;
     background: var(--color-blackest);
-    padding: 40px 0;
+    padding: 0px 0 !important;
     @media #{$sm-layout} {
       padding: 60px 0;
-      padding-bottom: 30px;
+      padding-bottom: 0px;
     }
   }
   .separator-animated {

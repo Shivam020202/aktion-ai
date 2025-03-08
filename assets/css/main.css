@@ -3153,7 +3153,12 @@
   position: relative !important;
 }
 
+.border-new {
+  border: 2px solid #c41e3a !important;
+}
+
 .custom-tab-btn .generator-icon {
+  /* border: 1px solid #c41e3a; */
   margin-left: 14px !important;
   margin-right: 14px !important;
   display: inline-flex !important;

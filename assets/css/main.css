@@ -3154,7 +3154,8 @@
 }
 
 .border-new {
-  border: 2px solid #c41e3a !important;
+  border: 2px solid #ff3355 !important;
+  border-radius: 20px;
 }
 
 .custom-tab-btn .generator-icon {

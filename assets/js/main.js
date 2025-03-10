@@ -1269,16 +1269,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="aktion-feature-intro">
                         <h3 class="aktion-feature-title3">${feature.title}</h3>
-                        <p class="aktion-feature-description">${
-                          feature.description
-                        }</p>
-                    </div>
+                        </div>
+                    
                     <div class="aktion-feature-toggle">
                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                             <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </div>
                 </div>
+                
+                        <p class="aktion-feature-description mt-4">${
+                          feature.description
+                        }
+                        </p>
+                
                 <div class="aktion-feature-content">
                     <div class="aktion-feature-points">
                         ${feature.points

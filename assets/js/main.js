@@ -1089,7 +1089,7 @@ const aktionFeatures = [
 
 `,
     },
-    title: "Multi-Lingual Input - Both Offline & Online",
+    title: "Multilingual Input - Both Offline & Online",
     description:
       "No more language barriers. Just seamless collaboration. AktionAI understands over 15+ languages, ensuring global teams stay aligned—no matter where they are",
     points: [

@@ -13483,6 +13483,7 @@ body.active-dark-mode.modal-open {
   transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1),
     box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
 }
+
 .team::before {
   position: absolute;
   bottom: 0;
@@ -13500,6 +13501,7 @@ body.active-dark-mode.modal-open {
   transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
   cursor: pointer;
 }
+
 .team::after {
   position: absolute;
   bottom: 0;
@@ -13517,6 +13519,38 @@ body.active-dark-mode.modal-open {
   transition: opacity 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
   cursor: pointer;
   opacity: 0;
+}
+
+/* Mobile and tablet: Default active state */
+@media (max-width: 991px) {
+  .team {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22%);
+  }
+
+  .team::before {
+    opacity: 0;
+  }
+
+  .team::after {
+    opacity: 1;
+  }
+}
+
+/* Desktop: Hover based effects */
+@media (min-width: 992px) {
+  .team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22%);
+  }
+
+  .team:hover::before {
+    opacity: 0;
+  }
+
+  .team:hover::after {
+    opacity: 1;
+  }
 }
 .team .thumbnail {
   display: block;
@@ -17513,6 +17547,7 @@ iframe {
 }
 
 .rbt-progress-parent {
+  display: none;
   position: fixed;
   right: 30px;
   bottom: 30px;
@@ -19295,7 +19330,7 @@ iframe {
 }
 .footer-style-3 .footer-top {
   background: var(--color-blackest);
-  padding: 50px 0 30px 0;
+  padding: 50px 0 10px 0;
 }
 @media only screen and (max-width: 767px) {
   .footer-style-3 .footer-top {
@@ -24929,7 +24964,7 @@ iframe {
   color: var(--color-primary);
 }
 
-.contact-div{
-  display: flex!important;
+.contact-div {
+  display: flex !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */

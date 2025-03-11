@@ -1,30 +1,11 @@
 // https://github.com/camsjams/jquery-style-switcher
 /**
-@author Cameron Manavian 
-jQuery Style Switcher
-
-The MIT License (MIT)
-
-Copyright (c) 2014 Cameron Manavian
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-**/
+ * @author Cameron Manavian
+ * jQuery Style Switcher
+ * The MIT License (MIT)
+ * Copyright (c) 2014 Cameron Manavian
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software.
+ */
 
 (function ($) {
   var jStyleSwitcher,
@@ -33,48 +14,23 @@ SOFTWARE.
       defaultThemeId: "jssDefault",
       fullPath: "css/",
       cookie: {
-        expires: "",
+        expires: 7, // Set the default cookie expiry time
         isManagingLoad: true,
       },
     },
-    // private
     _cookieKey = "jss_selected",
     _docCookies = {};
 
-  /*\
-    |*|
-    |*|  :: cookies.js ::
-    |*|
-    |*|  A complete cookies reader/writer framework with full unicode support.
-    |*|
-    |*|  revision #1
-    |*|
-    |*|  https://developer.mozilla.org/en-US/docs/Web/API/document.cookie
-    |*|
-    |*|  This framework is released under the GNU Public License, version 3 or later.
-    |*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
-    |*|
-    |*|  Syntaxes:
-    |*|
-    |*|  * docCookies.setItem(name, value[, end[, path[, domain[, secure]]]])
-    |*|  * docCookies.getItem(name)
-    |*|  * docCookies.removeItem(name[, path[, domain]])
-    |*|  * docCookies.hasItem(name)
-    |*|  * docCookies.keys()
-    |*|
-    \*/
   _docCookies = {
     getItem: function (sKey) {
-      if (!sKey) {
-        return null;
-      }
+      if (!sKey) return null;
       return (
         decodeURIComponent(
           document.cookie.replace(
             new RegExp(
-              "(?:(?:^|.*;)\\s*" +
+              "(?:(?:^|.;)\\s" +
                 encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
-                "\\s*\\=\\s*([^;]*).*$)|^.*$"
+                "\\s*\\=\\s*([^;]).$)|^.*$"
             ),
             "$1"
           )
@@ -113,9 +69,7 @@ SOFTWARE.
       return true;
     },
     removeItem: function (sKey, sPath, sDomain) {
-      if (!this.hasItem(sKey)) {
-        return false;
-      }
+      if (!this.hasItem(sKey)) return false;
       document.cookie =
         encodeURIComponent(sKey) +
         "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" +
@@ -124,9 +78,7 @@ SOFTWARE.
       return true;
     },
     hasItem: function (sKey) {
-      if (!sKey) {
-        return false;
-      }
+      if (!sKey) return false;
       return new RegExp(
         "(?:^|;\\s*)" +
           encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") +
@@ -136,7 +88,7 @@ SOFTWARE.
     keys: function () {
       var aKeys = document.cookie
         .replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "")
-        .split(/\s*(?:\=[^;]*)?;\s*/);
+        .split(/\s*(?:\=[^;])?;\s/);
       for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
         aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]);
       }
@@ -149,40 +101,22 @@ SOFTWARE.
   };
 
   jStyleSwitcher.prototype = {
-    /**
-     * {Object} DOM reference to style option list
-     */
     $root: null,
-
-    /**
-     * {Object} configs for the style switcher
-     */
     config: {},
-
-    /**
-     * {Object} jQuery reference to <link> tag for swapping CSS
-     */
     $themeCss: null,
-
-    /**
-     * {String} default theme page was loaded with
-     */
     defaultTheme: null,
 
     init: function ($root, config) {
       this.$root = $root;
-      this.config = config ? config : {};
+      this.config = $.extend(true, _defaultOptions, config);
       this.setDefaultTheme();
       if (this.defaultTheme) {
-        // try cookies
-        if (this.config.cookie) {
+        if (this.config.cookie.isManagingLoad) {
           this.checkCookie();
         }
-        // try hover
         if (this.config.hasPreview) {
           this.addHoverEvents();
         }
-        // finally, add click events
         this.addClickEvents();
       } else {
         this.$root.addClass("jssError error level0");
@@ -209,18 +143,11 @@ SOFTWARE.
     },
 
     checkCookie: function () {
-      var styleCookie;
-      // if using cookies and using JavaScript to load css
-      if (this.config.cookie && this.config.cookie.isManagingLoad) {
-        // check if css is set in cookie
-        styleCookie = _docCookies.getItem(_cookieKey);
-        if (styleCookie) {
-          newStyle = this.getFullAssetPath(styleCookie);
-          // update link tag
-          this.updateStyle(newStyle);
-          // update default ref
-          this.defaultTheme = newStyle;
-        }
+      var styleCookie = _docCookies.getItem(_cookieKey);
+      if (styleCookie) {
+        var newStyle = this.getFullAssetPath(styleCookie);
+        this.updateStyle(newStyle);
+        this.defaultTheme = newStyle;
       }
     },
 
@@ -230,11 +157,9 @@ SOFTWARE.
         function () {
           var asset = $(this).data("theme"),
             newStyle = self.getFullAssetPath(asset);
-          // update link tag
           self.updateStyle(newStyle);
         },
         function () {
-          // reset link tag
           self.resetStyle();
         }
       );
@@ -245,11 +170,8 @@ SOFTWARE.
       this.$root.find(".setColor").on("click", function () {
         var asset = $(this).data("theme"),
           newStyle = self.getFullAssetPath(asset);
-        // update link tag
         self.updateStyle(newStyle);
-        // update default ref
         self.defaultTheme = newStyle;
-        // try to store cookie
         if (self.config.cookie) {
           _docCookies.setItem(
             _cookieKey,
@@ -263,91 +185,48 @@ SOFTWARE.
   };
 
   $.fn.styleSwitcher = function (options) {
-    return new jStyleSwitcher(this, $.extend(true, _defaultOptions, options));
+    return new jStyleSwitcher(this, options);
   };
 
-  function createCookie(name, value, days) {
-    var expires;
-
-    if (days) {
-      var date = new Date();
-      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-      expires = "; expires=" + date.toGMTString();
-    } else {
-      expires = "";
-    }
-    document.cookie =
-      encodeURIComponent(name) +
-      "=" +
-      encodeURIComponent(value) +
-      expires +
-      "; path=/";
-  }
-
-  function readCookie(name) {
-    var nameEQ = encodeURIComponent(name) + "=";
-    var ca = document.cookie.split(";");
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) === " ") c = c.substring(1, c.length);
-      if (c.indexOf(nameEQ) === 0)
-        return decodeURIComponent(c.substring(nameEQ.length, c.length));
-    }
-    return null;
-  }
-
-  function eraseCookie(name) {
-    createCookie(name, "", -1);
-  }
-
-  //switcher js initialization
   $(function () {
-    // $('#my_switcher ul').styleSwitcher({
-    //     defaultThemeId: 'papr-dark-css',
-    //     hasPreview: false,
-    //     fullPath: directory_uri.templateUrl + '/assets/css/',
-    //     cookie: {
-    //         expires: 2628000, // 3600 == 1 hour
-    //         isManagingLoad: true
-    //     }
-    // });
+    var savedTheme = Cookies.get("styleCookieName");
+
+    if (!savedTheme) {
+      $("body").removeClass("active-dark-mode").addClass("active-light-mode");
+      Cookies.set("styleCookieName", "light", { expires: 7 });
+    } else if (savedTheme === "dark") {
+      $("body").addClass("active-light-mode").removeClass("active-dark-mode");
+    } else {
+      $("body").addClass("active-light-mode").removeClass("active-dark-mode");
+    }
+
+    $(".setColor").on("click", function () {
+      var theme = $(this).data("theme");
+
+      if (theme === "dark") {
+        $("body").addClass("active-light-mode").removeClass("active-dark-mode");
+      } else {
+        $("body").addClass("active-dark-mode").removeClass("active-light-mode");
+      }
+
+      Cookies.set("styleCookieName", theme, { expires: 7 });
+    });
 
     function setStyleCookie() {
-      styleCookieVal = $("body").hasClass("active-dark-mode")
+      var styleCookieVal = $("body").hasClass("active-light-mode")
         ? "dark"
         : "light";
       Cookies.set("styleCookieName", styleCookieVal, { expires: 7 });
-      // Cookies.set('styleCookieName', styleCookieVal);
     }
 
     if (Cookies.get("styleCookieName") == "dark") {
-      $("body").addClass("active-dark-mode");
+      $("body").addClass("active-light-mode");
     } else if (Cookies.get("styleCookieName") == "light") {
-      $("body").removeClass("active-light-mode");
+      $("body").removeClass("active-dark-mode");
     } else {
-      $("body").removeClass("active-light-mode");
+      $("body").removeClass("active-dark-mode");
     }
 
-    // Check Cookie
-    // eraseCookie('jss_selected');
-    var activeStyle = Cookies.get("styleCookieName");
-    if (activeStyle == "dark") {
-      $("#my_switcher").find(".setColor.dark").addClass("active");
-      $("body").removeClass("active-light-mode").addClass("active-dark-mode");
-    } else if (activeStyle == "light") {
-      $("#my_switcher").find(".setColor.light").addClass("active");
-      $("body").removeClass("active-dark-mode").addClass("active-light-mode");
-    } else {
-      // Swicher Active Class Baseon Body Class
-      if ($("body").hasClass("active-dark-mode")) {
-        $("#my_switcher").find(".setColor.light").removeClass("active");
-        $("#my_switcher").find(".setColor.dark").addClass("active");
-      } else {
-        $("#my_switcher").find(".setColor.dark").removeClass("active");
-        $("#my_switcher").find(".setColor.light").addClass("active");
-      }
-    }
-    // Set Click
     $("#my_switcher .setColor").on("click", function () {
       $(this)
         .closest("ul")
@@ -359,13 +238,12 @@ SOFTWARE.
       setStyleCookie();
     });
 
-    // Add or Remove Class into body when click swicher
     $("#my_switcher .setColor.dark").on("click", function () {
-      $("body").removeClass("active-light-mode").addClass("active-dark-mode");
+      $("body").removeClass("active-dark-mode").addClass("active-light-mode");
       setStyleCookie();
     });
     $("#my_switcher .setColor.light").on("click", function () {
-      $("body").removeClass("active-dark-mode").addClass("active-light-mode");
+      $("body").removeClass("active-light-mode").addClass("active-dark-mode");
       setStyleCookie();
     });
   });

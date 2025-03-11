@@ -20,6 +20,36 @@
     <link rel="stylesheet" href="assets/css/plugins/prism.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script>
+        (function () {
+            // Force light mode at load
+            localStorage.setItem('theme', 'light');
+            document.documentElement.setAttribute('data-theme', 'light');
+
+            // Override theme switcher functionality
+            document.addEventListener('DOMContentLoaded', () => {
+                const switcher = document.getElementById('my_switcher');
+                if (switcher) {
+                    switcher.querySelectorAll('.setColor').forEach(item => {
+                        item.addEventListener('click', (e) => {
+                            if (item.getAttribute('data-theme') === 'dark') {
+                                e.preventDefault(); // Stop the dark mode switch
+                                // alert("Dark mode is disabled!"); // Optional - You can remove this
+                            } else {
+                                localStorage.setItem('theme', 'light');
+                                document.documentElement.setAttribute('data-theme', 'light');
+                            }
+                        });
+                    });
+                }
+            });
+        })();
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('active-dark-mode');
+        });
+
+    </script>
+
 </head>
 
 <body>
@@ -670,7 +700,7 @@
                                                 class="fa-sharp fa-regular fa-arrow-right"></i></button>
                                     </div>
                                 </form> -->
-                                <h6 class="subtitle">Socials </h6>
+                                <h4 class="subtitle-new">Socials </h4>
 
                                 <div class="social-icons">
 
@@ -710,7 +740,7 @@
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-bottom">
-                                    <h4 class="title">Quick Links</h4>
+                                    <h4 class="subtitle-new">Quick Links</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
                                             <li><a href="index.html">Home</a></li>
@@ -727,7 +757,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Address</h4>
+                                    <h4 class="subtitle-new">Address</h4>
                                     <div class="inner contact-div ">
 
                                         <ul class="footer-link contact-link">
@@ -750,7 +780,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Contact</h4>
+                                    <h4 class="subtitle-new">Contact</h4>
                                     <div class="inner contact-div ">
                                         <ul class="footer-link contact-link">
                                             <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
@@ -791,8 +821,8 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="copyright-center text-center">
-                            <p class="copyright-text mb-0">Copyright © 2025 <a href="/"
-                                    class="btn-read-more"><span>Aktion Ai</span></a></p>
+                            <p class="copyright-text mb-0">Copyright © 2025 <a href="/" class="copyright-name">Aktion
+                                    Ai</a></p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-lg-end text-md-end text-center">

@@ -12887,7 +12887,7 @@ body.active-dark-mode.modal-open {
   font-size: var(--font-size-b2);
   line-height: var(--line-height-b2);
   font-weight: var(--p-regular);
-  color: var(--color-body);
+  color: gray;
   padding: 30px 20px;
   border-top: 1px solid var(--color-border);
 }
@@ -13746,61 +13746,115 @@ body.active-dark-mode.modal-open {
 .team.team-style--bottom.variation-2:hover .thumbnail a::after {
   opacity: 1;
 }
-.team:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 25px 55px rgba(253, 71, 102, 0.0022);
+/* For large screens (992px and above): Hover effects */
+@media (min-width: 992px) {
+  .team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.0022);
+  }
+  .team:hover::before {
+    opacity: 0;
+  }
+  .team:hover::after {
+    opacity: 1;
+  }
+  .team:hover .content .title {
+    transition-delay: 0.25s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .team:hover .content .designation {
+    transition-delay: 0.33s;
+    opacity: 0.7;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .team:hover ul.social-icon li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .team:hover ul.social-icon li:nth-child(1) {
+    -webkit-transition-delay: 0.07692s;
+    transition-delay: 0.07692s;
+  }
+  .team:hover ul.social-icon li:nth-child(2) {
+    -webkit-transition-delay: 0.15385s;
+    transition-delay: 0.15385s;
+  }
+  .team:hover ul.social-icon li:nth-child(3) {
+    -webkit-transition-delay: 0.23077s;
+    transition-delay: 0.23077s;
+  }
+  .team:hover ul.social-icon li:nth-child(4) {
+    -webkit-transition-delay: 0.33077s;
+    transition-delay: 0.23077s;
+  }
+  .team:hover ul.social-icon li:nth-child(5) {
+    -webkit-transition-delay: 0.43077s;
+    transition-delay: 0.23077s;
+  }
+  .team:hover .content {
+    opacity: 1;
+    visibility: visible;
+  }
+  .team:hover.team-style--bottom.variation-2 .content .icon-right {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
 }
-.team:hover::before {
-  opacity: 0;
-}
-.team:hover::after {
-  opacity: 1;
-}
-.team:hover .content .title {
-  transition-delay: 0.25s;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.team:hover .content .designation {
-  transition-delay: 0.33s;
-  opacity: 0.7;
-  visibility: visible;
-  transform: translateY(0);
-}
-.team:hover ul.social-icon li {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.team:hover ul.social-icon li:nth-child(1) {
-  -webkit-transition-delay: 0.07692s;
-  transition-delay: 0.07692s;
-}
-.team:hover ul.social-icon li:nth-child(2) {
-  -webkit-transition-delay: 0.15385s;
-  transition-delay: 0.15385s;
-}
-.team:hover ul.social-icon li:nth-child(3) {
-  -webkit-transition-delay: 0.23077s;
-  transition-delay: 0.23077s;
-}
-.team:hover ul.social-icon li:nth-child(4) {
-  -webkit-transition-delay: 0.33077s;
-  transition-delay: 0.23077s;
-}
-.team:hover ul.social-icon li:nth-child(5) {
-  -webkit-transition-delay: 0.43077s;
-  transition-delay: 0.23077s;
-}
-.team:hover .content {
-  opacity: 1;
-  visibility: visible;
-}
-.team:hover.team-style--bottom.variation-2 .content .icon-right {
-  opacity: 1;
-  transform: translateX(0);
-  visibility: visible;
+
+/* For small screens (991px and below): Default active state without animations */
+@media (max-width: 991px) {
+  /* Disable all transitions */
+  .team,
+  .team::before,
+  .team::after,
+  .team .content,
+  .team .content .title,
+  .team .content .designation,
+  .team ul.social-icon li,
+  .team.team-style--bottom.variation-2 .content .icon-right {
+    transition: none !important;
+  }
+
+  /* Apply all hover effects by default */
+  .team {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.0022) !important;
+  }
+  .team::before {
+    opacity: 0 !important;
+  }
+  .team::after {
+    opacity: 1 !important;
+  }
+  .team .content .title {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+  .team .content .designation {
+    opacity: 0.7 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+  .team ul.social-icon li {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+  .team .content {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .team.team-style--bottom.variation-2 .content .icon-right {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+    visibility: visible !important;
+  }
 }
 
 @keyframes rotateCircle {
@@ -16733,7 +16787,7 @@ img.mfp-img {
   padding: 40px;
   border-radius: 10px;
   padding-top: 40px;
-  background: var(--color-blackest);
+  background: #F5E0E0;
   padding-bottom: 50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
@@ -17361,7 +17415,7 @@ iframe {
 }
 
 .contact-details-box {
-  background: var(--color-blackest);
+  background: #f5e0e0;
   padding: 50px;
   border-radius: var(--radius);
 }

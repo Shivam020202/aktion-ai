@@ -672,67 +672,69 @@
     }
   }
 
-  /* Mobile and tablet: Default active state */
-  @media (max-width: 991px) {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22%);
+  /* Large screens (992px and above): Hover effects */
+  @media (min-width: 992px) {
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22%);
 
-    &::before {
-      opacity: 0;
-    }
+      &::before {
+        opacity: 0;
+      }
 
-    &::after {
-      opacity: 1;
-    }
-
-    .content {
-      .title {
+      &::after {
         opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
       }
 
-      .designation {
-        opacity: 0.7;
-        visibility: visible;
-        transform: translateY(0);
+      .content {
+        .title {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+
+        .designation {
+          opacity: 0.7;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+
+      ul.social-icon {
+        li {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+
+          &:nth-child(1) {
+            -webkit-transition-delay: 0.07692s;
+            transition-delay: 0.07692s;
+          }
+
+          &:nth-child(2) {
+            -webkit-transition-delay: 0.15385s;
+            transition-delay: 0.15385s;
+          }
+
+          &:nth-child(3) {
+            -webkit-transition-delay: 0.23077s;
+            transition-delay: 0.23077s;
+          }
+
+          &:nth-child(4) {
+            -webkit-transition-delay: 0.33077s;
+            transition-delay: 0.33077s;
+          }
+
+          &:nth-child(5) {
+            -webkit-transition-delay: 0.43077s;
+            transition-delay: 0.43077s;
+          }
+        }
       }
     }
 
-    ul.social-icon {
-      li {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-
-        &:nth-child(1) {
-          -webkit-transition-delay: 0.07692s;
-          transition-delay: 0.07692s;
-        }
-
-        &:nth-child(2) {
-          -webkit-transition-delay: 0.15385s;
-          transition-delay: 0.15385s;
-        }
-
-        &:nth-child(3) {
-          -webkit-transition-delay: 0.23077s;
-          transition-delay: 0.23077s;
-        }
-
-        &:nth-child(4) {
-          -webkit-transition-delay: 0.33077s;
-          transition-delay: 0.33077s;
-        }
-
-        &:nth-child(5) {
-          -webkit-transition-delay: 0.43077s;
-          transition-delay: 0.43077s;
-        }
-      }
-    }
-
-    &.team-style--bottom.variation-2 {
+    &.team-style--bottom.variation-2:hover {
       .thumbnail {
         a {
           &::before {
@@ -750,6 +752,75 @@
           opacity: 1;
           transform: translateX(0);
           visibility: visible;
+        }
+      }
+    }
+  }
+
+  /* Mobile and tablet: Default active state without animations (991px and below) */
+  @media (max-width: 991px) {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 25px 55px rgba(253, 71, 102, 0.22%) !important;
+
+    /* Disable all transitions for small screens */
+    &,
+    &::before,
+    &::after,
+    .content .title,
+    .content .designation,
+    ul.social-icon li,
+    .team-style--bottom.variation-2 .content .icon-right {
+      transition: none !important;
+    }
+
+    &::before {
+      opacity: 0 !important;
+    }
+
+    &::after {
+      opacity: 1 !important;
+    }
+
+    .content {
+      .title {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+      }
+
+      .designation {
+        opacity: 0.7 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+      }
+    }
+
+    ul.social-icon {
+      li {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+      }
+    }
+
+    &.team-style--bottom.variation-2 {
+      .thumbnail {
+        a {
+          &::before {
+            opacity: 0 !important;
+          }
+
+          &::after {
+            opacity: 1 !important;
+          }
+        }
+      }
+
+      .content {
+        .icon-right {
+          opacity: 1 !important;
+          transform: translateX(0) !important;
+          visibility: visible !important;
         }
       }
     }

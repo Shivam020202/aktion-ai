@@ -396,3 +396,40 @@
     @include ml-container-width(540px);
   }
 }
+
+/* For screens smaller than tablets (typically under 768px) */
+@media (max-width: 767px) {
+  /* Target the service style 1 */
+  .service.service__style--1 {
+    transform: translateY(-5px) !important;
+  }
+
+  /* Target the service style 2 */
+  .service.service__style--2 {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 0 39px rgba(255, 101, 80, 0.1) !important;
+  }
+
+  /* For the aiwave-service-default with centered-shape */
+  .aiwave-service-default .description.centered-shape::after {
+    opacity: 1 !important;
+  }
+
+  /* For the read-more-btn hover effect */
+  .aiwave-service-default .description .read-more-btn {
+    background: linear-gradient(90deg, #805af5 0%, #ce99ff 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  /* For gallery-style hover */
+  .service.gallery-style .content .title a {
+    color: var(--color-primary) !important;
+  }
+
+  /* For any other hover effects in the service components */
+  .service .content .title a {
+    color: var(--color-primary) !important;
+  }
+}

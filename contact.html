@@ -26,23 +26,6 @@
 <body>
     <main class="page-wrapper">
 
-        <div id="my_switcher" class="my_switcher">
-            <ul>
-                <li>
-                    <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                        <img src="assets/images/light/switch/sun-01.svg" alt="Sun images"><span title="Light Mode">
-                            Light</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                        <img src="assets/images/light/switch/vector.svg" alt="Vector Images"><span title="Dark Mode">
-                            Dark</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
         <nav class="aktion-navbar">
             <div class="container aktion-navbar-container">
                 <a href="index.html" class="aktion-logo">
@@ -58,7 +41,7 @@
 
                 <ul class="aktion-nav-links">
                     <li class="aktion-nav-item">
-                        <a href="index.html" class="aktion-nav-link active">Home</a>
+                        <a href="index.html" class="aktion-nav-link ">Home</a>
                     </li>
                     <li class="aktion-nav-item">
                         <a href="integrations.html" class="aktion-nav-link">Integrations</a>
@@ -109,7 +92,7 @@
             </div>
             <ul class="aktion-nav-links">
                 <li class="aktion-nav-item">
-                    <a href="/" class="aktion-nav-link active">Home</a>
+                    <a href="/" class="aktion-nav-link ">Home</a>
                 </li>
                 <li class="aktion-nav-item">
                     <a href="/partnership.html" class="aktion-nav-link">Partnership</a>
@@ -152,7 +135,7 @@
         <!-- Start Breadcrumb Area  -->
         <div class="main-content">
             <!-- Start Breadcarumb area  -->
-            <div class="breadcrumb-area breadcarumb-style-1 pt--50 pb--50">
+            <div class="breadcrumb-bp  pt--50 pb--50">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
@@ -171,298 +154,134 @@
         </div>
 
         <!-- Start Contact Area  -->
-        <div class="main-content">
-
-            <div class="rainbow-contact-area mb--50">
-                <div class="container">
-                    <div class="row mt--40 row--15">
-                        <div class="col-lg-8">
-                            <div class="contact-details-box">
-                                <h3>Your details please</h3>
-
-                                <div class="profile-details-tab">
-                                    <!-- <div class="advance-tab-button">
-                                        <ul class="nav nav-tabs tab-button-style-2 justify-content-start"
-                                            id="settinsTab-4" role="tablist">
-                                            <li role="presentation">
-                                                <a href="#" class="tab-button active" id="image-genarator-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#image-genarator" role="tab"
-                                                    aria-controls="image-genarator" aria-selected="true">
-                                                    <span class="title">AI Image</span>
-                                                    <span class="title">Generator</span>
-                                                </a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#" class="tab-button" id="photo-editor-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#photo-editor" role="tab"
-                                                    aria-controls="photo-editor" aria-selected="true">
-                                                    <span class="title">AI Photo</span>
-                                                    <span class="title">Generator</span>
-                                                </a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#" class="tab-button" id="email-genarator-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#email-genarator" role="tab"
-                                                    aria-controls="email-genarator" aria-selected="true">
-                                                    <span class="title">AI Email</span>
-                                                    <span class="title">Generator</span>
-                                                </a>
-                                            </li>
-                                            <li role="presentation">
-                                                <a href="#" class="tab-button" id="code-genarator-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#code-genarator" role="tab"
-                                                    aria-controls="code-genarator" aria-selected="true">
-                                                    <span class="title">AI Code</span>
-                                                    <span class="title">Generator</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
-
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade active show" id="image-genarator" role="tabpanel"
-                                            aria-labelledby="image-genarator-tab">
-
-                                            <form action="#" class="rbt-profile-row rbt-default-form row row--15">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="firstname1">First Name</label>
-                                                        <input id="firstname1" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="lastname1">Last Name</label>
-                                                        <input id="lastname1" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="username1">E-mail</label>
-                                                        <input id="username1" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="phonenumber1">Phone Number</label>
-                                                        <input id="phonenumber1" type="tel" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="bio1">Requirement</label>
-                                                        <textarea id="bio1" cols="20" rows="5"
-                                                            placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt--20">
-                                                    <div class="form-group mb--0">
-                                                        <a class="btn-default" href="#">Submit</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
-
-                                        <div class="tab-pane fade" id="photo-editor" role="tabpanel"
-                                            aria-labelledby="photo-editor-tab">
-
-                                            <form action="#" class="rbt-profile-row rbt-default-form row row--15">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="firstname2">First Name</label>
-                                                        <input id="firstname2" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="lastname2">Last Name</label>
-                                                        <input id="lastname2" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="username2">E-mail</label>
-                                                        <input id="username2" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="phonenumber2">Phone Number</label>
-                                                        <input id="phonenumber2" type="tel" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="bio2">Requirement</label>
-                                                        <textarea id="bio2" cols="20" rows="5"
-                                                            placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt--20">
-                                                    <div class="form-group mb--0">
-                                                        <a class="btn-default" href="#">Update Info</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
-
-
-                                        <div class="tab-pane fade" id="email-genarator" role="tabpanel"
-                                            aria-labelledby="email-genarator-tab">
-
-                                            <form action="#" class="rbt-profile-row rbt-default-form row row--15">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="firstname3">First Name</label>
-                                                        <input id="firstname3" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="lastname3">Last Name</label>
-                                                        <input id="lastname3" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="username3">E-mail</label>
-                                                        <input id="username3" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="phonenumber3">Phone Number</label>
-                                                        <input id="phonenumber3" type="tel"
-                                                            placeholder="+1-202-555-0174">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="bio3">Requirement</label>
-                                                        <textarea id="bio3" cols="20" rows="5"
-                                                            placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt--20">
-                                                    <div class="form-group mb--0">
-                                                        <a class="btn-default" href="#">Update Info</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
-
-                                        <div class="tab-pane fade" id="code-genarator" role="tabpanel"
-                                            aria-labelledby="code-genarator-tab">
-
-                                            <form action="#"
-                                                class="rbt-image-genarator-row rbt-default-form row row--15">
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="firstname4">First Name</label>
-                                                        <input id="firstname4" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="lastname4">Last Name</label>
-                                                        <input id="lastname4" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="username4">E-mail</label>
-                                                        <input id="username4" type="text" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <div class="form-group">
-                                                        <label for="phonenumber4">Phone Number</label>
-                                                        <input id="phonenumber4" type="tel" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="bio4">Requirement</label>
-                                                        <textarea id="bio4" cols="20" rows="5"
-                                                            placeholder=""></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 mt--20">
-                                                    <div class="form-group mb--0">
-                                                        <a class="btn-default" href="#">Update Info</a>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
+        <section class="bcpt_contact_section">
+            <div class="container">
+                <div class="row">
+                    <!-- Form Column -->
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <div class="bcpt_form_container">
+                            <h2 class="bcpt_section_title">Your details please</h2>
+                            <form action='https://app.formester.com/forms/t3jub_18SayZ/submissions' method='POST'>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="firstName" class="bcpt_form_label">First Name</label>
+                                        <input type="text" id="firstName" name="firstName"
+                                            class="form-control bcpt_form_input" required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="lastName" class="bcpt_form_label">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName"
+                                            class="form-control bcpt_form_input" required>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="email" class="bcpt_form_label">E-mail</label>
+                                        <input type="email" id="email" name="email" class="form-control bcpt_form_input"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="phone" class="bcpt_form_label">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" class="form-control bcpt_form_input"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="requirement" class="bcpt_form_label">Requirement</label>
+                                    <textarea id="requirement" name="requirement"
+                                        class="form-control bcpt_form_textarea" required></textarea>
+                                </div>
+                                <button type="submit" class="btn bcpt_submit_btn">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <!-- Information Column -->
+                    <div class="col-lg-5">
+                        <!-- Location Card -->
+                        <div class="bcpt_info_card">
+                            <div class="bcpt_info_container">
+                                <div class="bcpt_icon_container">
+                                    <svg class="bcpt_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <h3 class="bcpt_info_title">Location</h3>
+                            </div>
+
+                            <div class="bcpt_location_item">
+                                <h4 class="bcpt_location_name">Kolkata</h4>
+                                <a href="https://www.google.com/maps/place/Ecospace+Business+Park/@22.5858076,88.4874246,17z/data=!3m1!4b1!4m6!3m5!1s0x3a020ac6499c8499:0x17c545e20b241d8d!8m2!3d22.5858027!4d88.4899995!16s%2Fg%2F1hc1jr17q?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D"
+                                    class="bcpt_location_address" target="_blank">
+                                    Ecospace Business Park<br>
+                                    Newtown, India
+                                </a>
+                            </div>
+
+                            <div class="bcpt_location_item">
+                                <h4 class="bcpt_location_name">Delhi-NCR</h4>
+                                <a href="https://www.google.com/maps/place/Super+Mart+1,+Dlf+Phase+4/@28.4624669,77.0847776,17z/data=!4m10!1m2!2m1!1sOffice+No.+C-062d,+Super+Mart-1,+DLF+Phase+-+4,+Gurugram,+Haryana+122009,+India.!3m6!1s0x390d18d951c8c715:0x7bd03ee1a03a14e0!8m2!3d28.4624409!4d77.0869111!15sClBPZmZpY2UgTm8uIEMtMDYyZCwgU3VwZXIgTWFydC0xLCBETEYgUGhhc2UgLSA0LCBHdXJ1Z3JhbSwgSGFyeWFuYSAxMjIwMDksIEluZGlhLlpJIkdvZmZpY2Ugbm8gYyAwNjJkIHN1cGVyIG1hcnQgMSBkbGYgcGhhc2UgNCBndXJ1Z3JhbSBoYXJ5YW5hIDEyMjAwOSBpbmRpYZIBDWdyb2Nlcnlfc3RvcmXgAQA!16s%2Fg%2F11h7rr32hh?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D"
+                                    class="bcpt_location_address" target="_blank">
+                                    Super Mart-1<br>
+                                    Gurugram, India
+                                </a>
                             </div>
                         </div>
-                        <div class="col-lg-4 mt_md--30 mt_sm--30">
-                            <div class="rainbow-address">
-                                <div class="icon">
-                                    <i class="fa-sharp fa-regular fa-location-dot"></i>
+
+                        <!-- Contact Number Card -->
+                        <div class="bcpt_info_card">
+                            <div class="bcpt_info_container">
+                                <div class="bcpt_icon_container">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.49999 3L6.49999 21M17.5 3L14.5 21M20.5 8H3.5M19.5 16H2.5"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
                                 </div>
-                                <div class="inner">
-                                    <h4 class="title">Location</h4>
-                                    <ul>
-                                        <li><a target="_blank"
-                                                href="https://www.google.com/maps/place/Ecospace+Business+Park/@22.5858076,88.4874246,17z/data=!3m1!4b1!4m6!3m5!1s0x3a020ac6499c8499:0x17c545e20b241d8d!8m2!3d22.5858027!4d88.4899995!16s%2Fg%2F1hc1jr17q?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">
-                                                <h6 class="city-name">Kolkata</h6>
-                                                <p class="b2">Ecospace Business Park <br> Newtown, India</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank"
-                                                href="https://www.google.com/maps/place/Super+Mart+1,+Dlf+Phase+4/@28.4624669,77.0847776,17z/data=!4m10!1m2!2m1!1sOffice+No.+C-062d,+Super+Mart-1,+DLF+Phase+-+4,+Gurugram,+Haryana+122009,+India.!3m6!1s0x390d18d951c8c715:0x7bd03ee1a03a14e0!8m2!3d28.4624409!4d77.0869111!15sClBPZmZpY2UgTm8uIEMtMDYyZCwgU3VwZXIgTWFydC0xLCBETEYgUGhhc2UgLSA0LCBHdXJ1Z3JhbSwgSGFyeWFuYSAxMjIwMDksIEluZGlhLlpJIkdvZmZpY2Ugbm8gYyAwNjJkIHN1cGVyIG1hcnQgMSBkbGYgcGhhc2UgNCBndXJ1Z3JhbSBoYXJ5YW5hIDEyMjAwOSBpbmRpYZIBDWdyb2Nlcnlfc3RvcmXgAQA!16s%2Fg%2F11h7rr32hh?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">
-                                                <h6 class="city-name">Delhi-NCR</h6>
-                                                <p class="b2">Super Mart-1<br>Gurugram, India</p>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <h3 class="bcpt_info_title">Contact Number</h3>
                             </div>
-                            <div class="rainbow-address">
-                                <div class="icon">
-                                    <i class="fa-sharp fa-solid fa-headphones"></i>
+
+                            <a href="tel:+919903004242" class="bcpt_contact_link">+91-9903004242</a>
+                            <a href="tel:+919903004344" class="bcpt_contact_link">+91-9903004344</a>
+                        </div>
+
+                        <!-- Email Card -->
+                        <div class="bcpt_info_card">
+                            <div class="bcpt_info_container">
+                                <div class="bcpt_icon_container">
+                                    <svg class="bcpt_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                    </svg>
                                 </div>
-                                <div class="inner">
-                                    <h4 class="title">Contact Number</h4>
-                                    <p class="b2"><a href="tel:9903004242">+91-9903004242</a></p>
-                                    <p class="b2"><a href="tel:9903004344">+91-9903004344</a></p>
-                                </div>
+                                <h3 class="bcpt_info_title">Our Email Address</h3>
                             </div>
-                            <div class="rainbow-address">
-                                <div class="icon">
-                                    <i class="fa-sharp fa-regular fa-envelope"></i>
-                                </div>
-                                <div class="inner">
-                                    <h4 class="title">Our Email Address</h4>
-                                    <p class="b2"><a href="mailto:info@bluecoppertech.com">info@bluecoppertech.com</a>
-                                    </p>
-                                    <p class="b2"><a href="mailto:sales@bluecoppertech.com">sales@bluecoppertech.com</a>
-                                    </p>
-                                </div>
-                            </div>
+
+                            <a href="mailto:info@bluecoppertech.com"
+                                class="bcpt_contact_link">info@bluecoppertech.com</a>
+                            <a href="mailto:sales@bluecoppertech.com"
+                                class="bcpt_contact_link">sales@bluecoppertech.com</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <!-- Start CTA Area -->
-
-        </div>
+        </section>
         <!-- End Contact Area  -->
 
+
+
+
+
         <!-- Start Footer Area  -->
-        <footer class="rainbow-footer footer-style-default footer-style-3 position-relative">
+        <footer class="rainbow-footer footer-style-default footer-style-3 position-relative mt--30">
             <div class="footer-top">
                 <div class="container">
                     <div class="row justify-content-between">
@@ -476,14 +295,14 @@
                                 </div>
                                 <p class="b1 desc-text">Efficient Translation, Meetings & Task Management</p>
                                 <!-- <h6 class="subtitle">Join our Newsletter</h6>
-                                    <form class="newsletter-form" action="#">
-                                        <div class="form-group">
-                                            <input type="email" placeholder="Enter Your Email Here">
-                                            <button class="btn-default bg-solid-primary" type="submit"><i
-                                                    class="fa-sharp fa-regular fa-arrow-right"></i></button>
-                                        </div>
-                                    </form> -->
-                                <h6 class="subtitle">Socials </h6>
+                                <form class="newsletter-form" action="#">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Enter Your Email Here">
+                                        <button class="btn-default bg-solid-primary" type="submit"><i
+                                                class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                                    </div>
+                                </form> -->
+                                <h4 class="subtitle-new">Socials </h4>
 
                                 <div class="social-icons">
 
@@ -523,7 +342,7 @@
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-bottom">
-                                    <h4 class="title">Quick Links</h4>
+                                    <h4 class="subtitle-new">Quick Links</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
                                             <li><a href="index.html">Home</a></li>
@@ -540,7 +359,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Address</h4>
+                                    <h4 class="subtitle-new">Address</h4>
                                     <div class="inner contact-div ">
 
                                         <ul class="footer-link contact-link">
@@ -563,7 +382,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Contact</h4>
+                                    <h4 class="subtitle-new">Contact</h4>
                                     <div class="inner contact-div ">
                                         <ul class="footer-link contact-link">
                                             <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
@@ -604,9 +423,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="copyright-center text-center">
-                            <p class="copyright-text mb-0">Copyright © 2025 <a href="/"
-                                    class="btn-read-more"><span>Aktion
-                                        Ai</span></a></p>
+                            <p class="copyright-text mb-0">Copyright © 2025 AktionAI
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-lg-end text-md-end text-center">
@@ -620,12 +437,7 @@
 
     </main>
 
-    <!-- All Scripts  -->
-    <div class="rbt-progress-parent" style="display: none;">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+
 
     <script src="assets/js/vendor/modernizr.min.js"></script>
     <script src="assets/js/vendor/jquery.min.js"></script>

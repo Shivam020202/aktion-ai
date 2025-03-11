@@ -25,24 +25,6 @@
 
 <body>
 
-    <!-- End Header Top Area  -->
-    <!-- test -->
-    <div id="my_switcher" class="my_switcher">
-        <ul>
-            <li>
-                <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                    <img src="assets/images/light/switch/sun-01.svg" alt="Sun images"><span title="Light Mode">
-                        Light</span>
-                </a>
-            </li>
-            <li>
-                <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                    <img src="assets/images/light/switch/vector.svg" alt="Vector Images"><span title="Dark Mode">
-                        Dark</span>
-                </a>
-            </li>
-        </ul>
-    </div>
 
     <nav class="aktion-navbar">
         <div class="container aktion-navbar-container">
@@ -58,10 +40,10 @@
 
             <ul class="aktion-nav-links">
                 <li class="aktion-nav-item">
-                    <a href="index.html" class="aktion-nav-link active">Home</a>
+                    <a href="index.html" class="aktion-nav-link ">Home</a>
                 </li>
                 <li class="aktion-nav-item">
-                    <a href="integrations.html" class="aktion-nav-link">Integrations</a>
+                    <a href="integrations.html" class="aktion-nav-link active">Integrations</a>
                 </li>
                 <li class="aktion-nav-item">
                     <a href="company.html" class="aktion-nav-link">Company</a>
@@ -108,13 +90,13 @@
         </div>
         <ul class="aktion-nav-links">
             <li class="aktion-nav-item">
-                <a href="/" class="aktion-nav-link active">Home</a>
+                <a href="/" class="aktion-nav-link ">Home</a>
             </li>
             <li class="aktion-nav-item">
                 <a href="/partnership.html" class="aktion-nav-link">Partnership</a>
             </li>
             <li class="aktion-nav-item">
-                <a href="/integrations.html" class="aktion-nav-link">Integrations</a>
+                <a href="/integrations.html" class="aktion-nav-link active">Integrations</a>
             </li>
             <li class="aktion-nav-item">
                 <a href="/company.html" class="aktion-nav-link">Company</a>
@@ -148,123 +130,22 @@
     </div>
 
     <!-- Hero , Sorting and Cards -->
-    <div>
-        <div class=" breadcrumb-bp  pt--50 pb--50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb-inner text-center">
-                            <h3 class="title h3">Explore Our Integrations</h3>
-                            <p class="bc-desc">Experience smooth and efficient connections with all your favorite tools
-                                through seamless
-                                global
-                                integrations, enhancing
-                                productivity, collaboration, and workflow across multiple platforms with ease and
-                                reliability</p>
-
-                        </div>
+    <div class=" breadcrumb-bp  pt--50 pb--50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner text-center">
+                        <h3 class="title h3">Explore Our Integrations</h3>
+                        <p class="bc-desc">Experience smooth and efficient connections with all your favorite tools
+                            through seamless global integrations, enhancing productivity, collaboration, and workflow
+                            across multiple platforms with ease and reliability</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="tg-container container">
-             Filter Buttons
-            <div class="tg-filter-container d-flex justify-content-center mt-5">
-                <button class="tg-filter-btn tg-active" data-filter="all">All</button>
-                <button class="tg-filter-btn" data-filter="Dialer">Dialer</button>
-                <button class="tg-filter-btn" data-filter="Video Conferencing">Video Conferencing</button>
-                <button class="tg-filter-btn" data-filter="CRM">CRM</button>
-            </div>
-
-            Cards Grid 
-            <div class="row g-4" id="tgToolsGrid mb-5">
-                Card 1 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="Dialer">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">Dialer</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="Aircall" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">Conversation Intelligence for Aircall.io</h5>
-                        </div>
-                    </div>
-                </div>
-
-                Card 2 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="Video Conferencing">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">Video Conferencing</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="BlueJeans" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">AI Meeting Assistant for BlueJeans Video Conferencing</h5>
-                        </div>
-                    </div>
-                </div>
-
-                 Card 3 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="CRM">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">CRM</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="Copper" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">AI Meeting Assistant & Conversation Intelligence for Copper CRM
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-
-                 Card 4 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="Video Conferencing">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">Video Conferencing</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="GoToMeeting" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">AI Meeting Assistant for GoToMeeting Video Conferencing</h5>
-                        </div>
-                    </div>
-                </div>
-
-                Card 5 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="Video Conferencing">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">Video Conferencing</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="Google Meet" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">AI Meeting Assistant for Google Meet Video Conferencing</h5>
-                        </div>
-                    </div>
-                </div>
-
-                 Card 6 
-                <div class="col-12 col-md-6 col-lg-4 tg-tool-card" data-category="Dialer">
-                    <div class="tg-card card">
-                        <div class="card-body">
-                            <div class="tg-tag">Dialer</div>
-                            <div class="tg-card-img-container">
-                                <img src="/api/placeholder/200/100" alt="Groove" class="img-fluid">
-                            </div>
-                            <h5 class="card-title mt-4">Conversation Intelligence for Groove</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
     <section class="aktionAI-integrations-section">
-        <!-- Background decorative shapes -->
-        <!-- <div class="aktionAI-bg-shape aktionAI-shape-1"></div>
-        <div class="aktionAI-bg-shape aktionAI-shape-2"></div> -->
-
         <div class="container">
             <!-- Integration categories -->
             <div class="row justify-content-center">
@@ -380,21 +261,6 @@
         </div>
     </section>
 
-
-
-    <!-- CTA Section HTML -->
-    <!-- <div class="container">
-        <div class="tg-cta-section">
-            <h2 class="tg-cta-title">Ready to Transform Your Business?</h2>
-            <p class="tg-cta-description">Experience the power of AI-driven conversations and meetings. Schedule a
-                personalized demo today and see how we can help streamline your business communications.</p>
-            <button class="tg-demo-btn">
-                <i class="fas fa-phone-alt"></i>
-                Schedule a Demo
-            </button>
-        </div>
-    </div> -->
-
     <!-- Start Footer Area  -->
     <footer class="rainbow-footer footer-style-default footer-style-3 position-relative">
         <div class="footer-top">
@@ -410,14 +276,14 @@
                             </div>
                             <p class="b1 desc-text">Efficient Translation, Meetings & Task Management</p>
                             <!-- <h6 class="subtitle">Join our Newsletter</h6>
-                                    <form class="newsletter-form" action="#">
-                                        <div class="form-group">
-                                            <input type="email" placeholder="Enter Your Email Here">
-                                            <button class="btn-default bg-solid-primary" type="submit"><i
-                                                    class="fa-sharp fa-regular fa-arrow-right"></i></button>
-                                        </div>
-                                    </form> -->
-                            <h6 class="subtitle">Socials </h6>
+                                <form class="newsletter-form" action="#">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Enter Your Email Here">
+                                        <button class="btn-default bg-solid-primary" type="submit"><i
+                                                class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                                    </div>
+                                </form> -->
+                            <h4 class="subtitle-new">Socials </h4>
 
                             <div class="social-icons">
 
@@ -457,7 +323,7 @@
                     <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                         <div class="rainbow-footer-widget">
                             <div class="widget-menu-bottom">
-                                <h4 class="title">Quick Links</h4>
+                                <h4 class="subtitle-new">Quick Links</h4>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
                                         <li><a href="index.html">Home</a></li>
@@ -474,7 +340,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="rainbow-footer-widget">
                             <div class="widget-menu-top">
-                                <h4 class="title">Address</h4>
+                                <h4 class="subtitle-new">Address</h4>
                                 <div class="inner contact-div ">
 
                                     <ul class="footer-link contact-link">
@@ -495,7 +361,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="rainbow-footer-widget">
                             <div class="widget-menu-top">
-                                <h4 class="title">Contact</h4>
+                                <h4 class="subtitle-new">Contact</h4>
                                 <div class="inner contact-div ">
                                     <ul class="footer-link contact-link">
                                         <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
@@ -536,8 +402,7 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="copyright-center text-center">
-                        <p class="copyright-text mb-0">Copyright © 2025 <a href="/" class="btn-read-more"><span>Aktion
-                                    Ai</span></a></p>
+                        <p class="copyright-text mb-0">Copyright © 2025 AktionAI
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 text-lg-end text-md-end text-center">
@@ -550,12 +415,6 @@
 
 
 
-    <!-- All Scripts  -->
-    <div class="rbt-progress-parent" style="display: none;">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
 
     <!-- JS -->
     <script src="assets/js/vendor/modernizr.min.js"></script>
@@ -574,7 +433,7 @@
     <script src="assets/js/vendor/js.cookie.js"></script>
     <script src="assets/js/vendor/jquery.style.swicher.js"></script>
 
-    <!-- <script src="assets/js/vendor/jquery-one-page-nav.js"></script> -->
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>

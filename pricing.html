@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
+    <meta name="theme-style-mode" content="0">
 
     <title>Pricing</title>
     <!-- Favicon -->
@@ -26,24 +26,6 @@
 <body>
     <main class="page-wrapper">
 
-        <!-- End Header Top Area  -->
-        <div id="my_switcher" class="my_switcher">
-            <ul>
-                <li>
-                    <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                        <img src="assets/images/light/switch/sun-01.svg" alt="Sun images"><span title="Light Mode">
-                            Light</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                        <img src="assets/images/light/switch/vector.svg" alt="Vector Images"><span title="Dark Mode">
-                            Dark</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
         <nav class="aktion-navbar">
             <div class="container aktion-navbar-container">
                 <a href="index.html" class="aktion-logo">
@@ -59,7 +41,7 @@
 
                 <ul class="aktion-nav-links">
                     <li class="aktion-nav-item">
-                        <a href="index.html" class="aktion-nav-link active">Home</a>
+                        <a href="index.html" class="aktion-nav-link ">Home</a>
                     </li>
                     <li class="aktion-nav-item">
                         <a href="integrations.html" class="aktion-nav-link">Integrations</a>
@@ -72,7 +54,7 @@
                     </li>
 
                     <li class="aktion-nav-item">
-                        <a href="pricing.html" class="aktion-nav-link">Pricing</a>
+                        <a href="pricing.html" class="aktion-nav-link active">Pricing</a>
                     </li>
                 </ul>
 
@@ -110,7 +92,7 @@
             </div>
             <ul class="aktion-nav-links">
                 <li class="aktion-nav-item">
-                    <a href="/" class="aktion-nav-link active">Home</a>
+                    <a href="/" class="aktion-nav-link ">Home</a>
                 </li>
                 <li class="aktion-nav-item">
                     <a href="/partnership.html" class="aktion-nav-link">Partnership</a>
@@ -122,7 +104,7 @@
                     <a href="/company.html" class="aktion-nav-link">Company</a>
                 </li>
                 <li class="aktion-nav-item">
-                    <a href="/pricing.html" class="aktion-nav-link">Pricing</a>
+                    <a href="/pricing.html" class="aktion-nav-link active">Pricing</a>
                 </li>
             </ul>
             <a href="/contact.html" class=" d-sm-none d-md-block aktion-demo-btn">
@@ -149,9 +131,7 @@
             </div>
         </div>
 
-        <!-- Start Pricing Area  -->
         <div class="main-content">
-
             <div>
                 <div class="breadcrumb-bp  pt--50 pb--50">
                     <div class="container">
@@ -320,10 +300,10 @@
                                 <div class="opti_price_card opti_price_card_premier">
                                     <div class="opti_price_badge">Best Value</div>
                                     <div class="opti_price_header">
-                                        <div class="opti_price_title">Premier (Free)</div>
+                                        <div class="opti_price_title">Premier </div>
                                         <div class="opti_price_intro">Introductory offer</div>
                                         <div class="opti_price_amount"><span
-                                                class="opti_price_amount_strike">₹250/Month</span></div>
+                                                class="opti_price_amount_strike">₹250/Month*</span>(Free)</div>
                                     </div>
 
                                     <div class="opti_price_features">
@@ -594,9 +574,8 @@
                                         <p class="description sal-animate" data-sal="slide-up" data-sal-duration="400"
                                             data-sal-delay="300">
                                             Don't find your answer here? just send us a message for any query.</p>
-                                        <div class="contact-button mt-4 sal-animate" data-sal="slide-up"
-                                            data-sal-duration="400" data-sal-delay="400">
-                                            <a class="rainbow-gradient-btn without-shape" target="_blank"
+                                        <div>
+                                            <a class="rainbow-gradient-btn without-shape bg-light"
                                                 href="contact.html"><span>Contact
                                                     us</span></a>
                                         </div>
@@ -739,14 +718,14 @@
                                 </div>
                                 <p class="b1 desc-text">Efficient Translation, Meetings & Task Management</p>
                                 <!-- <h6 class="subtitle">Join our Newsletter</h6>
-                                    <form class="newsletter-form" action="#">
-                                        <div class="form-group">
-                                            <input type="email" placeholder="Enter Your Email Here">
-                                            <button class="btn-default bg-solid-primary" type="submit"><i
-                                                    class="fa-sharp fa-regular fa-arrow-right"></i></button>
-                                        </div>
-                                    </form> -->
-                                <h6 class="subtitle">Socials </h6>
+                                <form class="newsletter-form" action="#">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Enter Your Email Here">
+                                        <button class="btn-default bg-solid-primary" type="submit"><i
+                                                class="fa-sharp fa-regular fa-arrow-right"></i></button>
+                                    </div>
+                                </form> -->
+                                <h4 class="subtitle-new">Socials </h4>
 
                                 <div class="social-icons">
 
@@ -786,7 +765,7 @@
                         <div class="col-lg-2 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-bottom">
-                                    <h4 class="title">Quick Links</h4>
+                                    <h4 class="subtitle-new">Quick Links</h4>
                                     <div class="inner">
                                         <ul class="footer-link link-hover">
                                             <li><a href="index.html">Home</a></li>
@@ -803,7 +782,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Address</h4>
+                                    <h4 class="subtitle-new">Address</h4>
                                     <div class="inner contact-div ">
 
                                         <ul class="footer-link contact-link">
@@ -826,7 +805,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                             <div class="rainbow-footer-widget">
                                 <div class="widget-menu-top">
-                                    <h4 class="title">Contact</h4>
+                                    <h4 class="subtitle-new">Contact</h4>
                                     <div class="inner contact-div ">
                                         <ul class="footer-link contact-link">
                                             <li><i class="contact-icon fa-sharp fa-regular fa-envelope"></i><a
@@ -867,9 +846,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="copyright-center text-center">
-                            <p class="copyright-text mb-0">Copyright © 2025 <a href="/"
-                                    class="btn-read-more"><span>Aktion
-                                        Ai</span></a></p>
+                            <p class="copyright-text mb-0">Copyright © 2025 AktionAI
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 text-lg-end text-md-end text-center">
@@ -881,15 +858,7 @@
         </div>
     </main>
 
-    <!-- All Scripts  -->
-    <div class="rbt-progress-parent" style="display: none;">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-    <!-- JS
-============================================ -->
+    <!-- JS -->
     <script src="assets/js/vendor/modernizr.min.js"></script>
     <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>

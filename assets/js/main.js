@@ -1091,7 +1091,7 @@ const aktionFeatures = [
     },
     title: "Multilingual Input - Both Offline & Online",
     description:
-      "No more language barriers. Just seamless collaboration. AktionAI understands over 15+ languages, ensuring global teams stay aligned—no matter where they are",
+      "No more language barriers. Just seamless collaboration. AktionAI understands over 50+ languages, ensuring global teams stay aligned—no matter where they are",
     points: [
       "AI-Generated Tasks in Any Language – Extract and organize tasks while maintaining accuracy and context",
       "Language-Aware AI Models – Process complex grammar and nuances effortlessly",
